@@ -6,16 +6,22 @@
     <meta name="author" content="sehan">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacques+Francois&family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div>
-        <h3 id="Home"><span>Sass</span>ara.</h3>
+        <h3 id="Name"><span class="color">Sass</span>ara.</h3>
     </div>
 
     <!--navigation-->
-    <nav>
-        <a href="#Home">Home</a>
+    <nav id="nav">
+        <a href="#welcomeSec">Home</a>
         <a href="#About">About</a>
         <a href="#Skills">Skill</a>
         <a href="#Education">Education</a>
@@ -28,127 +34,130 @@
 
 <!--hero section-->
 <main>
-    <!--welcom section-->
-    <section>
-        <h3>Hello !</h3>
-        <h1>Welcome</h1>
-        <h2>I'm <span>Sehan</span> Sassara</h2>
-        <h3>Still Student In Software</h3>
-        <h3>Industry</h3>
-    </section>
+    <section id="welcomeSec">
+        <div id="content">
+            <!--welcome section-->
+            <div>
+                <h3 id="hello">Hello !</h3>
+                <h1 id="welcome">Welcome</h1>
+                <h2 id="iam">I'm <span class="color">Sehan</span> Sassara</h2>
+                <h3 id="still">Still Student In Software</h3>
+                <h3 id="industry">Industry</h3>
+            </div>
 
-    <!--contact section-->
-    <section>
-        <img src="assets/image/icons8-facebook-96%20(3).png" title="facebook" alt="facebook">
-        <img src="assets/image/icons8-instagram-96%20(1).png" title="instagram" alt="instagram">
-        <img src="assets/image/icons8-linkedin-96%20(1).png" title="linkedin" alt="linkedin">
-        <img src="assets/image/icons8-gmailss-96%20(5).png" title="gmail" alt="gmail">
-        <img src="assets/image/icons8-whatsapp-96%20(1).png" title="whatsapp" alt="whatsapp">
+            <!--contact section-->
+            <div class="socialIcons">
+                <img src="assets/image/icons8-facebook-96%20(3).png" title="facebook" alt="facebook">
+                <img src="assets/image/icons8-instagram-96%20(1).png" title="instagram" alt="instagram">
+                <img src="assets/image/icons8-linkedin-96%20(1).png" title="linkedin" alt="linkedin">
+                <img src="assets/image/icons8-gmailss-96%20(5).png" title="gmail" alt="gmail">
+                <img src="assets/image/icons8-whatsapp-96%20(1).png" title="whatsapp" alt="whatsapp">
+            </div>
+        </div>
+        <div id="imgCo">
+            <img id="img" src="assets/image/my%20pic.png" title="myPic" alt="myPic">
+        </div>
     </section>
-    <div>
-        <img src="assets/image/my%20pic.png" title="myPic" alt="myPic">
-    </div>
 </main>
 
 <!--about section-->
 <main>
-    <div>
-        <h3 id="About">About <span>Me</span></h3>
-        <h2>About</h2>
-    </div>
-
-    <div>
-        <p>Hello, I'm <span>Sehan Sassara</span>, currently a student at the Institute of Software Engineering (IJSE).I am studying to become a software engineer and I am very interested in it.
-            I am very fond of learning and discovering new things..
-            I'm also a passionate volleyball player, representing both my school and two sports clubs.As a volleyball player,
-            I have developed the ability to handle pressure and manage challenging situations effectively</p>
-    </div>
-    
-    <section>
+    <section id="aboutSec">
         <div>
-            <h3>Personal Details</h3>
-        </div>   
-        
-        <ul>
-            <li>Birthday </li>
-            <li>Phone </li>
-            <li>Email </li>
-            <li>Address </li>
-            <li>Job Status </li>
-        </ul>
-    </section>
-
-    <ul>
-        <li>31-07-2002</li>
-        <li>076 673 5404</li>
-        <li>sehansassara2002@gmail.com</li>
-        <li>Raththahena, Naranbedda, Hiriwadunna</li>
-        <li>Student</li>
-    </ul>
-
-    <section>
-        <div>
-            <h3>My Interest</h3>
+            <h3 class="mainH" id="About">About<span class="color">Me</span></h3>
+            <h2 class="subH">About</h2>
         </div>
-        
+
         <div>
-            <img src="assets/image/mu.png" title="music" alt="music">
-            <img src="assets/image/tttrrrrrr.png" title="travel" alt="travel">
-            <img src="assets/image/sportssss.png" title="sport" alt="sport">
-            <img src="assets/image/Moneyyy.png" title="money" alt="money">
-            <img src="assets/image/car.png" title="car" alt="car">
-            <img src="assets/image/ffffooooddd.png" title="food" alt="food">
+            <p id="myDetails">Hello, I'm <span class="color">Sehan Sassara</span>, currently a student at the Institute of Software Engineering (IJSE).I am studying to become a software engineer and I am very interested in it.
+                I am very fond of learning and discovering new things..
+                I'm also a passionate volleyball player, representing both my school and two sports clubs.As a volleyball player,
+                I have developed the ability to handle pressure and manage challenging situations effectively.</p>
+        </div>
+
+        <section>
+            <div class="hhhh">
+                <h3 id="perDetails">Personal Details</h3>
+                <h3 id="myInter">My Interest</h3>
+            </div>
+
+            <div>
+                <ul id="ul1">
+                    <li>Birthday <span class="color2">31-07-2002</span></li>
+                    <li>Phone <span class="color2">076 673 5404</span></li>
+                    <li>Email <span class="color2">sehansassara2002@gmail.com</span></li>
+                    <li>Address <span class="color2">Raththahena, Naranbedda, Hiriwadunna</span></li>
+                    <li>Job Status <span class="color2">Student</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+
+            </div>
+
+            <div id="imgInter">
+                <img src="assets/image/mu.png" title="music" alt="music">
+                <img src="assets/image/tttrrrrrr.png" title="travel" alt="travel">
+                <img src="assets/image/sportssss.png" title="sport" alt="sport">
+                <img src="assets/image/Moneyyy.png" title="money" alt="money">
+                <img src="assets/image/car.png" title="car" alt="car">
+                <img src="assets/image/ffffooooddd.png" title="food" alt="food">
+            </div>
+        </section>
+
+        <div>
+            <button id="download">Download CV</button>
         </div>
     </section>
-
-    <div>
-        <button>Download CV</button>
-    </div>
 </main>
 
 
 <!--Skill section-->
 <main>
-    <div>
-        <h3 id="Skills">What Are My <span>Skills ?</span></h3>
-        <h2>Skills</h2>
-    </div>
-
-    <section>
+    <section id="skillSec">
         <div>
-            <h3>Technical Skills</h3>
+            <h3 class="mainH" id="Skills">What Are My <span class="color">Skills ?</span></h3>
+            <h2 class="subH">Skills</h2>
         </div>
 
-        <div>
-            <img src="assets/image/icons8-java-96%20(1).png" title="Java" alt="Java">
-            <img src="assets/image/icons8-mysql-96.png" title="mysql" alt="mysql">
-            <img src="assets/image/icons8-html-96%20(2).png" title="html" alt="html">
-            <img src="assets/image/icons8-css-96%20(1).png" title="css" alt="css">
-            <img src="assets/image/icons8-javascript-96%20(2).png" title="JS" alt="JS">
-        </div>
-    </section>
+        <section>
+            <div>
+                <h3>Technical Skills</h3>
+            </div>
+
+            <div>
+                <img src="assets/image/icons8-java-96%20(1).png" title="Java" alt="Java">
+                <img src="assets/image/icons8-mysql-96.png" title="mysql" alt="mysql">
+                <img src="assets/image/icons8-html-96%20(2).png" title="html" alt="html">
+                <img src="assets/image/icons8-css-96%20(1).png" title="css" alt="css">
+                <img src="assets/image/icons8-javascript-96%20(2).png" title="JS" alt="JS">
+            </div>
+        </section>
 
 
-    <section>
-        <div>
-            <h3>Professional Skills</h3>
-        </div>
+        <section>
+            <div>
+                <h3>Professional Skills</h3>
+            </div>
 
-        <div>
-            <h4>Leadership</h4>
-            <h4>Creativity</h4>
-            <h4>Team work</h4>
-            <h4>Communication</h4>
-            <h4>Efficiency</h4>
-        </div>
+            <div>
+                <h4>Leadership</h4>
+                <h4>Creativity</h4>
+                <h4>Team work</h4>
+                <h4>Communication</h4>
+                <h4>Efficiency</h4>
+            </div>
 
-        <div>
-            <img src="assets/image/icons8-leadership-96.png" title="leadership" alt="leadership">
-            <img src="assets/image/icons8-creativity-96.png" title="creativity" alt="creativity">
-            <img src="assets/image/icons8-team-goal-96.png" title="team-work" alt="team-work">
-            <img src="assets/image/icons8-voice-recognition-96.png" title="communication" alt="communication">
-            <img src="assets/image/icons8-time-limit-96.png" title="efficiency" alt="efficiency">
-        </div>
+            <div>
+                <img src="assets/image/icons8-leadership-96.png" title="leadership" alt="leadership">
+                <img src="assets/image/icons8-creativity-96.png" title="creativity" alt="creativity">
+                <img src="assets/image/icons8-team-goal-96.png" title="team-work" alt="team-work">
+                <img src="assets/image/icons8-voice-recognition-96.png" title="communication" alt="communication">
+                <img src="assets/image/icons8-time-limit-96.png" title="efficiency" alt="efficiency">
+            </div>
+        </section>
     </section>
 </main>
 
@@ -198,31 +207,39 @@
         </div>
 
         <div>
-            <img src="assets/image/pos%20system2.png" title="pos system" alt="pos system img">
-            <h3>LNV Sea Food Management System</h3>
-            <p>This project was developed using Java, MySQL, CSS, and Jaspersoft, with an MVC architecture. It streamlines work processes, making tasks easier and more efficient. Additionally, it includes a feature that allows for seamless bill generation.</p>
-            <button>SEE MORE</button>
+            <div>
+                <img src="assets/image/pos%20system2.png" title="pos system" alt="pos system img">
+                <h3>LNV Sea Food Management System</h3>
+                <p>This project was developed using Java, MySQL, CSS, and Jaspersoft, with an MVC architecture. It streamlines work processes, making tasks easier and more efficient. Additionally, it includes a feature that allows for seamless bill generation.</p>
+                <button>SEE MORE</button>
+            </div>
         </div>
 
         <div>
-            <img src="assets/image/pos%20system3.png" title="pos system 2" alt="pos system img 2">
-            <h3>LNV Sea Food Management System(Layerd)</h3>
-            <p>This project is built using Java, MySQL, CSS, Jaspersoft, and other technologies. By applying a layered architecture, it ensures work processes are handled easily and efficiently. Additionally, it features seamless bill generation.</p>
-            <button>SEE MORE</button>
+            <div>
+                <img src="assets/image/pos%20system3.png" title="pos system 2" alt="pos system img 2">
+                <h3>LNV Sea Food Management System(Layerd)</h3>
+                <p>This project is built using Java, MySQL, CSS, Jaspersoft, and other technologies. By applying a layered architecture, it ensures work processes are handled easily and efficiently. Additionally, it features seamless bill generation.</p>
+                <button>SEE MORE</button>
+            </div>
         </div>
 
         <div>
-            <img src="assets/image/game8.png" title="connect4" alt="game img">
-            <h3>Connect 4 Game</h3>
-            <p>This project is a Connect 4 game where an AI competes against the user. I developed it using basic Java fundamentals and applied OOP concepts for structured and efficient coding.</p>
-            <button>SEE MORE</button>
+            <div>
+                <img src="assets/image/game8.png" title="connect4" alt="game img">
+                <h3>Connect 4 Game</h3>
+                <p>This project is a Connect 4 game where an AI competes against the user. I developed it using basic Java fundamentals and applied OOP concepts for structured and efficient coding.</p>
+                <button>SEE MORE</button>
+            </div>
         </div>
 
         <div>
-            <img src="assets/image/inve10.png" title="inventory management" alt="inventory img">
-            <h3>Inventory Management System</h3>
-            <p>This project handles inventory management, including adding, updating, and deleting stock. It was coded entirely in Java</p>
-            <button>SEE MORE</button>
+            <div>
+                <img src="assets/image/inve10.png" title="inventory management" alt="inventory img">
+                <h3>Inventory Management System</h3>
+                <p>This project handles inventory management, including adding, updating, and deleting stock. It was coded entirely in Java</p>
+                <button>SEE MORE</button>
+            </div>
         </div>
     </section>
 </main>
@@ -347,7 +364,7 @@
 <footer>
     <div>
         <h4>Copyright & copy 2003 by Sehan Sassara  || All Rights Reserved.</h4>
-        <a href="#Home">
+        <a href="#welcomeSec">
             <img src="assets/image/icons8-up-squared-96.png" title="up" alt="up logo">
         </a>
     </div>
