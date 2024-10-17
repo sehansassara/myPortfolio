@@ -87,3 +87,334 @@
     z-index: 1000;
 }
 
+
+@media screen and (max-width: 321px) {
+    .mainH{
+        font-size: 24px;
+    }
+
+    #Skills{
+        font-size: 29px;
+    }
+
+    #skillSec {
+        padding: 0 3%;
+        height: 79em;
+    }
+
+    .techSkill {
+        font-size: 14px;
+        margin-left: -175px;
+        text-align: center;
+    }
+
+    .techSkillBar {
+        max-width: 8.5em;
+        height: auto;
+        padding: 15px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        margin: 0 auto;
+        margin-left: 2px;
+    }
+
+    .img img{
+        width: 70px;
+    }
+
+    .img {
+        max-width: 69px;
+        left: 0;
+        right: 0;
+        margin: 10px auto;
+    }
+
+    .circular-bar {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        left: 0;
+        top: 0;
+    }
+
+    .circular-bar::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .percent {
+        font-size: 16px;
+    }
+
+    .title {
+        position: relative;
+        font-size: 10px;
+        margin-bottom: -55px;
+
+    }
+
+    #proSkill{
+        font-size: 14px;
+        margin-left: 160px;
+        text-align: center;
+        margin-top: -178.0vh;
+    }
+
+    #proSkillBar{
+        margin-left: 160px;
+    }
+}
+
+
+@media screen and (max-width: 376px) and (min-width: 321px) {
+    #skillSec {
+        padding: 0 3%;
+        height: 79em;
+    }
+
+    .techSkill {
+        font-size: 16px;
+        margin-left: -210px;
+        text-align: center;
+    }
+
+    .techSkillBar {
+        max-width: 10em;
+        height: auto;
+        padding: 15px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        margin: 0 auto;
+        margin-left: 5px;
+    }
+
+    .img img{
+        width: 70px;
+    }
+
+    .img {
+        max-width: 69px;
+        left: 0;
+        right: 0;
+        margin: 10px auto;
+    }
+
+    .circular-bar {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        left: 0;
+        top: 0;
+    }
+
+    .circular-bar::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .percent {
+        font-size: 16px;
+    }
+
+    .title {
+        position: relative;
+        font-size: 10px;
+        margin-bottom: -55px;
+
+    }
+
+    #proSkill{
+        font-size: 16px;
+        margin-left: 200px;
+        text-align: center;
+        margin-top: -178.4vh;
+    }
+
+    #proSkillBar{
+        margin-left: 190px;
+    }
+}
+
+@media (max-width: 426px) and (min-width: 376px) {
+    #skillSec {
+        padding: 0 3%;
+        height: 79em;
+    }
+
+    .techSkill {
+        font-size: 18px;
+        margin-left: -210px;
+        text-align: center;
+    }
+
+    .techSkillBar {
+        max-width: 10em;
+        height: auto;
+        padding: 15px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        margin: 0 auto;
+        margin-left: 18px;
+    }
+
+    .img img{
+        width: 70px;
+    }
+
+    .img {
+        max-width: 69px;
+        left: 0;
+        right: 0;
+        margin: 10px auto;
+    }
+
+    .circular-bar {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        left: 0;
+        top: 0;
+    }
+
+    .circular-bar::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .percent {
+        font-size: 16px;
+    }
+
+    .title {
+        position: relative;
+        font-size: 10px;
+        margin-bottom: -55px;
+
+    }
+
+    #proSkill{
+        font-size: 18px;
+        margin-left: 200px;
+        text-align: center;
+        margin-top: -179.0vh;
+    }
+
+    #proSkillBar{
+        margin-left: 220px;
+    }
+}
+
+
+@media (max-width: 769px) and (min-width: 426px) {
+    #skillSec {
+        padding: 0 3%;
+        height: 45em;
+    }
+
+    .techSkill {
+        font-size: 22px;
+        margin-left: 30px;
+    }
+
+    .techSkillBar {
+        max-width: 50em;
+        height: 200px;
+        padding: 0 10px;
+        grid-template-columns: repeat(5, 1fr);
+        border-radius: 20px;
+        margin-left: -15px;
+    }
+
+
+    .img img{
+       width: 80px;
+    }
+
+    .img {
+        max-width: 10px;
+        top: 5px;
+        margin-bottom: 15px;
+        left: -20px;
+    }
+
+    .circular-bar {
+        width: 90px;
+        height: 90px;
+        top: 0;
+    }
+
+    .circular-bar::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .percent {
+        font-size: 16px;
+    }
+
+    #proSkill {
+        top: 5px;
+    }
+
+    .title {
+        font-size: 10px;
+        bottom: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    #skillSec {
+        padding: 0 4%;
+        height: 53em;
+    }
+
+    .techSkill {
+        font-size: 26px;
+        margin-left: 40px;
+    }
+
+    .techSkillBar {
+        max-width: 60em;
+        height: 230px;
+        padding: 0 15px;
+        grid-template-columns: repeat(5, 1fr);
+        border-radius: 25px;
+        margin-right: 10px;
+    }
+
+    .img {
+        max-width: 65px;
+        top: 5px;
+        margin-bottom: 20px;
+       left: -15px;
+    }
+
+    .circular-bar {
+        width: 110px;
+        height: 110px;
+
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -10px;
+    }
+
+    .circular-bar::before {
+        width: 90px;
+        height: 90px;
+    }
+
+    .percent {
+        font-size: 18px;
+    }
+
+    #proSkill {
+        top: 8px;
+    }
+
+    .title {
+        font-size: 11px;
+        bottom: 15px;
+    }
+}
