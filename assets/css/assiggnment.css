@@ -1,0 +1,23 @@
+.assignment-sec{
+     background: #0E0B01;
+     padding: 0 5%;
+     position: relative;
+     height: 170vh;
+ }
+
+
+.card{
+    width: 220px;
+    height: 270px;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(to bottom, #916E3F, #442803);
+}
+
+.card img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    margin: auto;
+}
