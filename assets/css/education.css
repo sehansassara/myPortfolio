@@ -1,0 +1,145 @@
+#eduSec{
+    background: #0E0B01;
+    padding: 0 5%;
+    position: relative;
+    height: auto;
+}
+
+.timeLine{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 42%;
+}
+
+.textBox{
+    position: relative;
+    padding: 20px 30px;
+    background: linear-gradient(to right, #47d447 , white);
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.left-container{
+    right: 0%;
+}
+
+.part-circle{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: green;
+    right: -16px;
+    top: 32px;
+    z-index: 1;
+}
+
+.right-container .part-circle{
+    left: -20px;
+}
+
+.part{
+    position: relative;
+    top: -10px;
+    left: 16px;
+
+}
+
+.left-container-arrow{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+    right: -9px;
+}
+
+.right-container-arrow{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #47d447;
+    left: -9px;
+}
+
+.timeLine::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 0;
+}
+
+.textBox .year{
+    font-weight: 600;
+
+    max-width: max-content;
+   /* background: linear-gradient(to right, #44FF2B, #A8D0A3);*/
+
+}
+
+.topic{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/*
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+!* Slide-in animation from the right for right-container *!
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+!* Apply the animation when the container becomes visible *!
+.container.visible {
+    opacity: 1;
+    transform: translateY(0); !* Move to original position *!
+}
+
+.left-container.visible {
+    animation: slideInLeft 0.8s forwards;
+}
+
+.right-container.visible {
+    animation: slideInRight 0.8s forwards;
+}*/
