@@ -105,3 +105,318 @@ button:hover {
     opacity: 1;
     visibility: visible;
 }
+
+
+@media screen and (max-width: 321px) {
+    .assignment-sec {
+        padding: 0 1%;
+        height: 130vh;
+    }
+
+    .subH {
+        font-size: 50px;
+    }
+
+    .card {
+        width: 140px;
+        height: 190px;
+        margin-bottom: 10px;
+    }
+
+    #card1 {
+        left: 13px;
+        top: 20px;
+    }
+
+    #card2 {
+        left: 160px;
+        top: -180px;
+    }
+
+    #card3 {
+        left: 13px;
+        top: -160px;
+    }
+
+    #card4 {
+        left: 160px;
+        top: -360px;
+    }
+
+    #card5 {
+        left: 89px;
+        top: -339px;
+    }
+
+    .card h4 {
+        font-size: 12px;
+        left: 25%;
+        top: 103px;
+    }
+
+    .btn-view {
+        width: 45px;
+        height: 20px;
+        font-size: 8px;
+    }
+
+    .btn-as {
+        top: 150px;
+        left: 22px;
+    }
+
+    .card .description {
+        font-size: 8px;
+        padding: 4px;
+    }
+}
+
+
+@media screen and (max-width: 376px) and (min-width: 321px) {
+    .assignment-sec {
+        padding: 0 1.5%;
+        height: 130vh;
+    }
+
+    .subH{
+        font-size: 56px;
+    }
+
+    .card {
+        width: 150px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    #card1 {
+        left: 26px;
+        top: 20px;
+    }
+
+    #card2 {
+        left: 188px;
+        top: -195px;
+    }
+
+    #card3 {
+        left: 26px;
+        top: -184px;
+    }
+
+    #card4 {
+        left: 188px;
+        top: -399px;
+    }
+
+    #card5 {
+        left: 106px;
+        top: -388px;
+    }
+
+    .card h4 {
+        font-size: 13px;
+        left: 25%;
+        top: 106px;
+    }
+
+    .btn-view {
+        width: 50px;
+        height: 22px;
+        font-size: 9px;
+    }
+
+    .btn-as {
+        top: 160px;
+        left: 23px;
+    }
+
+    .card .description {
+        font-size: 9px;
+        padding: 5px;
+    }
+}
+
+
+@media screen and (max-width: 426px) and (min-width: 376px) {
+    .assignment-sec {
+        padding: 0 2%;
+        height: 148vh;
+    }
+
+    .card {
+        width: 160px;
+        height: 210px;
+        margin-bottom: 20px;
+    }
+
+
+    #card1 {
+        left: 37px;
+        top: 20px;
+    }
+
+    #card2 {
+        left: 208px;
+        top: -210px;
+    }
+
+    #card3 {
+        left: 38px;
+        top: -190px;
+    }
+
+    #card4 {
+        left: 208px;
+        top: -420px;
+    }
+
+    #card5 {
+        left: 122px;
+        top: -396px;
+    }
+
+
+    .card h4 {
+        font-size: 14px;
+        left: 20%;
+        top: 100px;
+    }
+
+    .btn-view {
+        width: 55px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+    .btn-as {
+        top: 170px;
+        left: 23px;
+    }
+
+    .card .description {
+        font-size: 10px;
+        padding: 6px;
+    }
+}
+
+
+@media screen and (max-width: 769px) and (min-width: 426px) {
+    .assignment-sec {
+        padding: 0 3%;
+        height: 167vh;
+    }
+
+    .card {
+        width: 180px;
+        height: 230px;
+        margin-bottom: 25px;
+    }
+
+
+    #card1 {
+        left: 111px;
+        top: 30px;
+    }
+
+    #card2 {
+        left: 432px;
+        top: -225px;
+    }
+
+    #card3 {
+        left: 111px;
+        top: -200px;
+    }
+
+    #card4 {
+        left: 432px;
+        top: -455px;
+    }
+
+    #card5 {
+        left: 272px;
+        top: -421px;
+    }
+
+    .card h4 {
+        font-size: 15px;
+        left: 25%;
+        top: 116px;
+    }
+
+    .btn-view {
+        width: 80px;
+        height: 26px;
+        font-size: 11px;
+    }
+
+    .btn-as {
+        top: 190px;
+        left: 10px;
+    }
+
+    .card .description {
+        font-size: 11px;
+        padding: 8px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .assignment-sec {
+        padding: 0 4%;
+        height: 170vh;
+    }
+
+    .card {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    #card1 {
+        left: 60px;
+    }
+
+    #card2 {
+        left: 360px;
+    }
+
+    #card3 {
+        left: 660px;
+        top: -560px;
+    }
+
+    #card4 {
+        left: 60px;
+        top: -280px;
+    }
+
+    #card5 {
+        left: 660px;
+        top: -560px;
+    }
+
+
+    .card h4 {
+        font-size: 16px;
+        left: 24%;
+        top: 120px;
+    }
+
+    .btn-view {
+        width: 90px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .btn-as {
+        top: 200px;
+        left: 10px;
+    }
+
+    .card .description {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
