@@ -1,0 +1,440 @@
+#Name{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15vh;
+    margin: auto;
+    height: fit-content;
+    font-family: "Inter", sans-serif;
+    font-size: 2em;
+    color: white;
+    transform: scale(1) rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+#Name:hover{
+    transform: scale(1.2) ;
+}
+
+.color{
+    color: #FFA600;
+}
+
+#hello{
+    font-family: "Kaushan Script", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 0.3cm;
+    margin-left: 30px;
+}
+
+#welcome{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 128px;
+    line-height: 1cm;
+}
+
+#iam{
+    font-family: "Jacques Francois", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 0.3cm;
+    margin-left: 34px;
+}
+
+#still{
+    font-family: "Jacques Francois", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 0.3cm;
+    margin-left: 34px;
+}
+
+#industry{
+    font-family: "Jacques Francois", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    left: 100px;
+    line-height: 0.3cm;
+    top: 40px;
+    margin-left: 34px;
+}
+
+#welcomeSec {
+    overflow: hidden;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(135deg, #150C00 30%, #AC715B 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 7%;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-out forwards;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#content {
+    color: white;
+    max-width: 50%;
+    animation: slide 1.5s ease-out forwards;
+}
+
+#img{
+    position: relative;
+    width: 496px;
+    top: 61px;
+    transition: transform 3s ease-out;
+    animation: image 1.5s ease-out forwards;
+}
+
+
+
+.animate__bounceInDown  a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .2rem solid #AE5B12;
+    border-radius: 70%;
+    margin-left: 22px;
+    transition: .5s ease;
+}
+
+.animate__bounceInDown  a:hover{
+    background: #AE5B12;
+    box-shadow: 0 0 1rem #AE5B12;
+}
+
+.animate__bounceInDown img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+@media (max-width: 321px) {
+    #Name {
+        font-size: 1.5em;
+        left: 3vh;
+    }
+
+    #hello {
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 70px;
+    }
+
+    #welcome {
+        font-size: 50px;
+        line-height: 0.8cm;
+    }
+
+    #iam {
+        font-size: 29px;
+        margin-left: 15px;
+    }
+
+    #still, #industry {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    #content {
+        max-width: 100%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    #img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #welcomeSec {
+        flex-direction: column;
+        padding: 20px 5%;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .animate__bounceInDown a {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 10px;
+    }
+
+    .animate__bounceInDown img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+@media (max-width: 376px) and (min-width: 321px){
+    #Name {
+        font-size: 1.6em;
+        left: 3.5vh;
+    }
+
+    #hello {
+        font-size: 24px;
+        margin-left: 18px;
+        margin-top: 60px;
+    }
+
+    #welcome {
+        font-size: 50px;
+        line-height: 0.9cm;
+    }
+
+    #iam {
+        font-size: 28px;
+        margin-left: 18px;
+    }
+
+    #still, #industry {
+        font-size: 22px;
+        margin-left: 18px;
+    }
+
+    #content {
+        max-width: 100%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    #img {
+        width: 325px;
+        height: 425px;
+        object-fit: cover;
+    }
+
+    #welcomeSec {
+        flex-direction: column;
+        padding: 20px 5%;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .animate__bounceInDown a {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-left: 11px;
+    }
+
+    .animate__bounceInDown img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (max-width: 426px) and (min-width: 375px) {
+    #Name {
+        font-size: 1.6em;
+        left: 3.5vh;
+    }
+
+    #hello {
+        font-size: 24px;
+        margin-left: 18px;
+        margin-top: 60px;
+    }
+
+    #welcome {
+        font-size: 60px;
+        line-height: 0.9cm;
+    }
+
+    #iam {
+        font-size: 32px;
+        margin-left: 18px;
+    }
+
+    #still, #industry {
+        font-size: 22px;
+        margin-left: 18px;
+    }
+
+    #content {
+        max-width: 100%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    #img {
+        width: 325px;
+        height: 425px;
+        object-fit: cover;
+    }
+
+    #welcomeSec {
+        flex-direction: column;
+        padding: 20px 5%;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .animate__bounceInDown a {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-left: 11px;
+    }
+
+    .animate__bounceInDown img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+
+
+@media (max-width: 769px) and (min-width: 425px){
+    #Name {
+        font-size: 2em;
+        left: 4vh;
+    }
+
+
+    #hello {
+        font-size: 24px;
+        margin-left: 18px;
+        margin-top: 80px;
+    }
+
+    #welcome {
+        font-size: 50px;
+        line-height: 0.9cm;
+    }
+
+
+    #iam {
+        font-size: 32px;
+        margin-left: 18px;
+    }
+
+    #still, #industry {
+        font-size: 22px;
+        margin-left: 18px;
+    }
+
+    #content {
+        max-width: 100%;
+        padding: 0 0;
+        text-align: center;
+    }
+
+    #img {
+        width: 350px;
+        object-fit: cover;
+        top: 40px;
+    }
+
+    #welcomeSec {
+        flex-direction: column;
+        padding: 20px 5%;
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    .animate__bounceInDown a {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-left: 11px;
+    }
+
+    .animate__bounceInDown img {
+        width: 26px;
+        height: 26px;
+    }
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px){
+    #Name {
+        font-size: 2em;
+        left: 4vh;
+    }
+
+    #hello {
+        font-size: 24px;
+        margin-left: 18px;
+        margin-top: 80px;
+    }
+
+    #welcome {
+        font-size: 74px;
+        line-height: 0.9cm;
+    }
+
+    #iam {
+        font-size: 36px;
+        margin-left: 18px;
+    }
+
+    #still, #industry {
+        font-size: 28px;
+        margin-left: 18px;
+    }
+
+    .animate__bounceInDown a {
+        width: 2.9rem;
+        height: 2.9rem;
+        margin-left: 11px;
+    }
+
+    .animate__bounceInDown img {
+        width: 26px;
+        height: 26px;
+    }
+
+    #img{
+        width: 419px;
+        top: 42px;
+        margin-left: 40px;
+    }
+
+    #content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/*@media (max-width: 1440px) and (min-width: 768px){
+    #Name {
+        font-size: 2.5em;
+    }
+
+    #hello {
+        font-size: 28px;
+        margin-top: 80px;
+    }
+
+    #img{
+
+        top: 40px;
+        margin-left: 40px;
+    }
+}*/
+
+
