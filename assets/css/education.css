@@ -105,6 +105,147 @@
     margin-top: 5px;
 }
 
+@media (max-width: 321px) {
+    .mainH {
+        font-size: 24px;
+    }
+
+    .subH {
+        font-size: 53px;
+        bottom: 0.2em;
+    }
+
+    .left-container {
+        left: -4.6%;
+    }
+
+    .container {
+        padding: 6px 15px;
+    }
+
+    .textBox {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .part-circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .right-container .part-circle {
+        left: -19px;
+    }
+
+    .part {
+        position: absolute;
+        left: 6px;
+        top: -21px;
+    }
+
+    .right-container {
+        left: 53%;
+    }
+}
+
+
+@media (max-width: 376px) and (min-width: 321px) {
+    .mainH {
+        font-size: 28px;
+    }
+
+    .subH {
+        bottom: 0.3em;
+    }
+
+    .left-container {
+        left: -5%;
+    }
+
+    .container {
+        padding: 8px 20px;
+    }
+
+    .textBox {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .part-circle {
+        width: 24px;
+        height: 24px;
+    }
+
+    .right-container .part-circle {
+        left: -15px;
+    }
+
+    .part {
+        position: absolute;
+        left: 8px;
+        top: -18px;
+    }
+
+    .right-container{
+        left: 51%;
+    }
+}
+
+
+@media (max-width: 426px) and (min-width: 376px) {
+    .mainH {
+        font-size: 33px;
+    }
+
+    .subH {
+        bottom: 0.4em;
+    }
+
+    .left-container {
+        left: -4%;
+    }
+
+    .container {
+        padding: 10px 23px;
+    }
+
+    .textBox {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .part-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .right-container .part-circle {
+        left: -14px;
+    }
+
+    .part {
+        position: absolute;
+        left: 10px;
+        top: -16.5px;
+    }
+}
+
+
+
+@media (max-width: 769px) and (min-width: 426px) {
+    .left-container{
+        left: -6%;
+    }
+
+    .right-container .part-circle{
+        left: -14px;
+    }
+
+    .right-container{
+        left: 49%;
+    }
+}
+
 /*
 
 @keyframes slideInLeft {
