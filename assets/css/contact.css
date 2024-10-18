@@ -603,6 +603,10 @@
         align-items: flex-start;
     }
 
+    .right-sec{
+        margin-left: 60vw;
+    }
+
     .right-sec, .get-in-touch{
         font-size: 18px;
     }
