@@ -1,0 +1,119 @@
+body {
+    background: #150C00;
+    font-family: Arial, sans-serif;
+}
+
+.case-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.case-box {
+    background: linear-gradient(145deg, #4B3A3A, #332121);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #E0D8D8;
+}
+
+.case-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.case-title {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #FFD700;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+.case-title:hover {
+    color: #FFEB3B;
+}
+
+.case-description {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #C5C2C2;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.case-description:hover {
+    color: #E0E0E0;
+}
+
+.case-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.view-btn {
+    background: linear-gradient(135deg, #76AB72, #3A8531);
+    color: white;
+}
+
+.view-btn:hover {
+    background: linear-gradient(135deg, #558B2F, #2E7D32);
+}
+
+.see-more-btn {
+    background: linear-gradient(135deg, #2A81D9, #0A4FB5);
+    color: white;
+}
+
+.see-more-btn:hover {
+    background: linear-gradient(135deg, #1976D2, #1565C0);
+}
+
+#case-tit {
+    font-size: 28px;
+    color: #FFD700;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #FFC107, #FF9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FFD700;
+}
+
+#case-tit:hover {
+    transform: scale(1.1);
+    color: #FFECB3;
+}
+
+@media screen and (max-width: 768px) {
+    .case-container {
+        grid-template-columns: 1fr;
+    }
+}
