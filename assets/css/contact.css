@@ -301,3 +301,329 @@
     opacity: 0.95;
 }
 
+
+@media screen and (max-width: 321px) {
+    .contact-sec {
+        padding: 0 1%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "form"
+            "links-contact"
+            "social";
+    }
+
+    .form-email {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .email {
+        width: 160px;
+        font-size: 16px;
+        height: 30px;
+        margin-top: 30px;
+    }
+
+    .sub-bt {
+        width: 80px;
+        padding: 8px 0;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .links-contact {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .right-sec {
+        margin-left: 152px;
+        margin-top: -310px;
+    }
+
+    .get-in-touch{
+        font-size: 14px;
+    }
+    .data-contact{
+        font-size: 12px;
+    }
+
+    .a-link a {
+        font-size: 14px;
+    }
+
+    .a-link {
+        max-width: 40px;
+    }
+
+    #left-sec {
+        max-width: 70px;
+        margin-left: 36px;
+    }
+
+    .show-icons {
+        gap: 5px;
+    }
+
+    .show-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .my-sto {
+        font-size: 16px;
+        color: white;
+    }
+
+    #subH {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .img-contact {
+        width: 25px;
+        height: 25px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 376px) and (min-width: 321px) {
+    .contact-sec {
+        padding: 0 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "form"
+            "links-contact"
+            "social";
+    }
+
+    .form-email {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .email {
+        width: 160px;
+        font-size: 16px;
+        height: 30px;
+        margin-top: 30px;
+    }
+
+    .sub-bt {
+        width: 80px;
+        padding: 8px 0;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .links-contact {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .right-sec {
+        margin-left: 169px;
+        margin-top: -310px;
+    }
+
+    .get-in-touch{
+        font-size: 14px;
+    }
+    .data-contact{
+        font-size: 12px;
+    }
+
+    .a-link a {
+        font-size: 14px;
+    }
+
+    .a-link {
+        max-width: 40px;
+    }
+
+    #left-sec {
+        max-width: 80px;
+        margin-left: 20px;
+    }
+
+    .show-icons {
+        gap: 5px;
+    }
+
+    .show-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .my-sto {
+        font-size: 16px;
+        color: white;
+    }
+
+    #subH {
+        font-size: 35px;
+        font-weight: 800;
+
+    }
+
+    .img-contact {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+@media screen and (max-width: 426px) and (min-width: 376px) {
+    .contact-sec {
+        padding: 0 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "form"
+            "links-contact"
+            "social";
+    }
+
+    .form-email {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email {
+        width: 150px;
+        font-size: 18px;
+        height: 35px;
+        margin-top: 20px;
+    }
+
+    .sub-bt {
+        width: 100px;
+        padding: 10px 0;
+        font-size: 18px;
+        height: auto;
+    }
+
+    .links-contact {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .right-sec {
+        margin-left: 193px;
+        margin-top: -333px;
+
+    }
+
+    .get-in-touch{
+        font-size: 18px;
+    }
+
+    .a-link a {
+        font-size: 16px;
+    }
+
+    .a-link{
+        max-width: 50px;
+    }
+
+    #left-sec{
+        max-width: 100px;
+        margin-left: 34px;
+    }
+
+    .show-icons {
+        gap: 5px;
+    }
+
+    .show-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .my-sto {
+        font-size: 18px;
+        color: white;
+    }
+
+    #subH{
+        font-size: 50px;
+    }
+
+    .img-contact{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media (max-width: 769px) and (min-width: 426px){
+    .contact-sec {
+        padding: 0 2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "form"
+            "links-contact"
+            "social";
+    }
+
+    .form-email {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email {
+        width: 500px;
+        max-width: 100%;
+        font-size: 18px;
+        height: 35px;
+    }
+
+    .sub-bt {
+        width: 100px;
+        padding: 10px 20px;
+        font-size: 18px;
+        height: auto;
+    }
+
+    .links-contact {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .right-sec, .get-in-touch{
+        font-size: 18px;
+    }
+
+    .a-link a {
+        font-size: 16px;
+    }
+
+    .show-icons {
+        gap: 10px;
+    }
+
+    .show-icons img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .my-sto{
+        font-size: 18px;
+        color: white;
+    }
+}
+
+
