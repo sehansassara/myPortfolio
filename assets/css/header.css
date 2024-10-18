@@ -34,6 +34,10 @@ header{
     -webkit-background-clip: text;
 }
 
+.menu-icon{
+    display: none;
+}
+
 nav a span{
     position: absolute;
     top: 0;
@@ -53,26 +57,128 @@ nav a span{
     opacity: 1;
 }
 
-@media (max-width: 320px) {
-    #nav{
+@media screen and (max-width: 321px) {
+    header {
+        margin-top: -35px;
+    }
+
+    #nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 149px;
+        background: #150C00;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+
+    .menu-icon img {
+        margin-left: 271px;
+        width: 40px;
+        height: 40px;
     }
 }
 
-@media (max-width: 375px) and (min-width: 320px) {
-    #nav{
+@media screen and (max-width: 376px) and (min-width: 321px) {
+    header {
+        margin-top: -35px;
+    }
+
+    #nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 149px;
+        background: #150C00;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+
+    .menu-icon img {
+        margin-left: 328px;
+        width: 40px;
+        height: 40px;
     }
 }
 
-@media (max-width: 425px) and (min-width: 375px) {
-    #nav{
+@media screen and (max-width: 426px) and (min-width: 376px) {
+    header {
+        margin-top: -35px;
+    }
+
+    #nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 149px;
+        background: #150C00;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+
+    .menu-icon img {
+        margin-left: 357px;
+        width: 45px;
+        height: 45px;
     }
 }
 
-@media (max-width: 768px) {
-    #nav{
+@media (max-width: 768px) and (min-width: 426px) {
+    header {
+        margin-top: -35px;
+    }
+
+    #nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 149px;
+        background: #150C00;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #nav.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+
+    .menu-icon img {
+        display: inline;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin-left: 700px;
     }
 }
