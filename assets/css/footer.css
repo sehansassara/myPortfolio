@@ -1,0 +1,53 @@
+.footer-sec {
+    background-color: #150C00;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-sec div {
+    display: flex;
+    align-items: center;
+}
+
+.foo-data {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.footer-sec a {
+    text-decoration: none;
+}
+
+.footer-sec img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.footer-sec img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .foo-data {
+        font-size: 12px;
+    }
+
+    .footer-sec img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .foo-data {
+        font-size: 10px;
+    }
+
+    .footer-sec img {
+        width: 25px;
+    }
+}
