@@ -32,71 +32,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacques+Francois&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="assets/js/snd.js" defer></script>
 </head>
 <body>
 <header>
-    <div>
-        <h3 id="Name"><span class="color">Sass</span>ara.</h3>
-    </div>
+        <div>
+            <h3 id="Name"><span class="color">Sass</span>ara.</h3>
+        </div>
 
-    <div class="menu-icon" id="menu-icon">
-        <img src="assets/image/icons8-menu2-96.png">
-    </div>
 
-    <!--navigation-->
-    <nav id="nav">
-        <a href="#welcomeSec">Home<span></span></a>
-        <a href="#About">About<span></span></a>
-        <a href="#Skills">Skills<span></span></a>
-        <a href="#Education">Education<span></span></a>
-        <a href="#Projects">Project<span></span></a>
-        <a href="#Assignment">Assignment<span></span></a>
-        <a href="#Gallery">Gallery<span></span></a>
-        <a href="#Contact">Contact<span></span></a>
-    </nav>
+
+        <!--navigation-->
+        <nav id="nav">
+            <a href="#welcome-sec">Home<span></span></a>
+            <a href="#About">About<span></span></a>
+            <a href="#Skills">Skills<span></span></a>
+            <a href="#Education">Education<span></span></a>
+            <a href="#proSec">Project<span></span></a>
+            <a href="#Assignment">Assignment<span></span></a>
+            <a href="#Gallery">Gallery<span></span></a>
+            <a href="#Contact">Contact<span></span></a>
+
+            <div class="menu-icon" id="menu-icon">
+                <img src="assets/image/icons8-menu2-96.png">
+            </div>
+        </nav>
+
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="#welcomeSec">Home<span></span></a></li>
+                <li><a href="#About">About<span></span></a></li>
+                <li><a href="#Skills">Skills<span></span></a></li>
+                <li><a href="#Education">Education<span></span></a></li>
+                <li><a href="#Projects">Project<span></span></a></li>
+                <li><a href="#Assignment">Assignment<span></span></a></li>
+                <li><a href="#Gallery">Gallery<span></span></a></li>
+                <li><a href="#Contact">Contact<span></span></a></li>
+            </ul>
+        </div>
 </header>
 
 <!--hero section-->
 <main>
-    <section id="welcomeSec">
-        <div id="content">
-            <!--welcome section-->
-            <div class="animate__animated animate__bounceInDown">
-                <h3 id="hello">Hello !</h3>
-                <h1 id="welcome">Welcome</h1>
-                <h2 id="iam">I'm <span class="color">Sehan</span> Sassara</h2>
-                <h3 id="still">Still Student In Software</h3>
-                <h3 id="industry">Industry</h3>
-            </div>
-
-            <!--contact section-->
-            <div class="animate__animated animate__bounceInDown" data-aos="fade-right">
-                <a href="https://www.facebook.com" title="facebook" target="_blank">
-                    <img src="assets/image/icons8-facebook-96%20(3).png" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com" title="instagram" target="_blank">
-                    <img src="assets/image/icons8-instagram-96%20(1).png" alt="instagram">
-                </a>
-                <a href="https://www.linkedin.com" title="linkedin" target="_blank">
-                    <img src="assets/image/icons8-linkedin-96%20(1).png" alt="linkedin">
-                </a>
-                <a href="mailto:example@gmail.com" title="gmail" target="_blank">
-                    <img src="assets/image/icons8-gmailss-96%20(5).png" alt="gmail">
-                </a>
-                <a href="https://web.whatsapp.com" title="whatsapp" target="_blank">
-                    <img src="assets/image/icons8-whatsapp-96%20(1).png" alt="whatsapp">
-                </a>
-            </div>
-        </div>
-
-
-        <div id="imgCo">
-            <img id="img" src="assets/image/my%20pic.png" title="myPic" alt="myPic">
-        </div>
-
+    <section id="welcome-sec">
+        <img src="assets/image/stars.png" id="stars">
+        <img src="assets/image/moon.png" id="moon">
+        <img src="assets/image/mountains_behind.png" id="mountains_behind">
+        <!--<img id="my-pic" src="assets/image/my%20pic.png">-->
+        <h2 id="text"> Sehan Sassara</h2>
+        <a href="#" id="btnexplore">Explore</a>
+        <img src="assets/image/mountains_front.png" id="mountains_front">
     </section>
 </main>
-
 <!--about section-->
 <main>
     <section id="aboutSec">
@@ -112,40 +102,44 @@
                 I have developed the ability to handle pressure and manage challenging situations effectively.</p>
         </div>
 
-        <section>
-            <div class="hhhh">
-                <h3 id="perDetails">Personal Details</h3>
-                <h3 id="myInter">My Interest</h3>
-            </div>
 
-            <div>
-                <ul id="ul1" data-aos="zoom-in">
-                    <li>Birthday <span class="color2">31-07-2002</span></li>
-                    <li>Phone <span class="color2">076 673 5404</span></li>
-                    <li>Email <span class="color2">sehansassara2002@gmail.com</span></li>
-                    <li>Address <span class="color2">Raththahena, Naranbedda</span></li>
-                    <li>Job Status <span class="color2">Student</span></li>
-                </ul>
-            </div>
-        </section>
+        <section id="about-grid">
+            <section>
+                <div class="hhhh">
+                    <h3 id="perDetails">Personal Details</h3>
 
-        <section>
-            <div>
-
-            </div>
-
-            <div class="flex-pic">
-                <div id="imgInter" data-aos="zoom-in">
-                    <img src="assets/image/mu.png" title="music" alt="music">
-                    <img src="assets/image/tttrrrrrr.png" title="travel" alt="travel">
-                    <img src="assets/image/sportssss.png" title="sport" alt="sport">
-                    <img src="assets/image/Moneyyy.png" title="money" alt="money">
-                    <img src="assets/image/car.png" title="car" alt="car">
-                    <img src="assets/image/ffffooooddd.png" title="food" alt="food">
                 </div>
-            </div>
 
+                <div>
+                    <ul id="ul1" data-aos="zoom-in">
+                        <li>Birthday <span class="color2">31-07-2002</span></li>
+                        <li>Phone <span class="color2">076 673 5404</span></li>
+                        <li>Email <span class="color2">sehansassara2002@gmail.com</span></li>
+                        <li>Address <span class="color2">Raththahena, Naranbedda</span></li>
+                        <li>Job Status <span class="color2">Student</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="hhhh">
+                    <h3 id="myInter">My Interest</h3>
+                </div>
+
+                <div class="flex-pic">
+                    <div id="imgInter" data-aos="zoom-in">
+                        <img src="assets/image/mu.png" title="music" alt="music">
+                        <img src="assets/image/tttrrrrrr.png" title="travel" alt="travel">
+                        <img src="assets/image/sportssss.png" title="sport" alt="sport">
+                        <img src="assets/image/Moneyyy.png" title="money" alt="money">
+                        <img src="assets/image/car.png" title="car" alt="car">
+                        <img src="assets/image/ffffooooddd.png" title="food" alt="food">
+                    </div>
+                </div>
+
+            </section>
         </section>
+
 
         <div class="button">
             <a id="download" href="">
@@ -158,143 +152,146 @@
 </main>
 
 
-<!--Skill section-->
+
+<!--skill sec-->
 <main>
     <section id="skillSec">
         <div>
-            <h3 class="mainH" id="Skills" data-aos="fade-right">What Are My <span class="color">Skills ?</span></h3>
-            <h2 class="subH" data-aos="fade-left">Skills</h2>
+            <h3 class="mainH" id="Skills">What Are My <span class="color">Skills ?</span></h3>
+            <h2 class="subH">Skills</h2>
         </div>
 
-        <section>
-            <div data-aos="fade-down-right">
-                <h3 class="techSkill">Technical Skills</h3>
-            </div>
-
-            <div class="techSkillBar" data-aos="zoom-in-left">
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-java-96%20(1).png" title="Java" alt="Java">
-                    </div>
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                    </div>
+        <section id="skill-grid">
+            <section class="skillBar">
+                <div data-aos="fade-down-right">
+                    <h3 class="techSkill">Technical Skills</h3>
                 </div>
 
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-mysql-96.png" title="mysql" alt="mysql">
+                <div class="techSkillBar" data-aos="zoom-in-left">
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-java-96%20(1).png" title="Java" alt="Java">
+                        </div>
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                        </div>
                     </div>
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
+
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-mysql-96.png" title="mysql" alt="mysql">
+                        </div>
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-html-96%20(2).png" title="html" alt="html">
+                        </div>
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-css-96%20(1).png" title="css" alt="css">
+                        </div>
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-javascript-96%20(2).png" title="JS" alt="JS">
+                        </div>
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-html-96%20(2).png" title="html" alt="html">
-                    </div>
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                    </div>
+
+            <section  class="skillBar">
+                <div data-aos="fade-down-right">
+                    <h3 class="techSkill" id="proSkill">Professional Skills</h3>
                 </div>
 
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-css-96%20(1).png" title="css" alt="css">
-                    </div>
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-javascript-96%20(2).png" title="JS" alt="JS">
-                    </div>
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section>
-            <div data-aos="fade-down-right">
-                <h3 class="techSkill" id="proSkill">Professional Skills</h3>
-            </div>
-
-            <!--<div>
+                <!--<div>
                 <h4>Leadership</h4>
                 <h4>Creativity</h4>
                 <h4>Team work</h4>
                 <h4>Communication</h4>
                 <h4>Efficiency</h4>
             </div>
--->
-            <div class="techSkillBar" id="proSkillBar" data-aos="zoom-in-right">
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-leadership-96.png" title="leadership" alt="leadership">
+                -->
+                <div class="techSkillBar" id="proSkillBar" data-aos="zoom-in-right">
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-leadership-96.png" title="leadership" alt="leadership">
+                        </div>
+
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                            <h4 class="title">Leadership</h4>
+                        </div>
                     </div>
 
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                        <h4 class="title">Leadership</h4>
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-creativity-96.png" title="creativity" alt="creativity">
+                        </div>
+
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                            <h4 class="title">Creativity</h4>
+                        </div>
                     </div>
+
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-team-goal-96.png" title="team-work" alt="team-work">
+                        </div>
+
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                            <h4 class="title">Team work</h4>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-voice-recognition-96.png" title="communication" alt="communication">
+                        </div>
+
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                            <h4 class="title">Communication</h4>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="img">
+                            <img src="assets/image/icons8-time-limit-96.png" title="efficiency" alt="efficiency">
+                        </div>
+
+                        <div class="circular-bar">
+                            <div class="percent">0%</div>
+                            <h4 class="title">Efficiency</h4>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-creativity-96.png" title="creativity" alt="creativity">
-                    </div>
-
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                        <h4 class="title">Creativity</h4>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-team-goal-96.png" title="team-work" alt="team-work">
-                    </div>
-
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                        <h4 class="title">Team work</h4>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-voice-recognition-96.png" title="communication" alt="communication">
-                    </div>
-
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                        <h4 class="title">Communication</h4>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="img">
-                        <img src="assets/image/icons8-time-limit-96.png" title="efficiency" alt="efficiency">
-                    </div>
-
-                    <div class="circular-bar">
-                        <div class="percent">0%</div>
-                        <h4 class="title">Efficiency</h4>
-                    </div>
-                </div>
-
-            </div>
-
+            </section>
         </section>
+
     </section>
 </main>
-
 
 
 <!--Education-->
@@ -467,7 +464,7 @@
 
 
 <!--Assignment section-->
-<main>
+<!--<main>
     <section class="assignment-sec">
         <div>
             <h3 id="Assignment" class="mainH" data-aos="fade-right">My <span class="color">Works</span></h3>
@@ -551,6 +548,111 @@
             </div>
         </div>
     </section>
+</main>-->
+<main>
+    <section class="assignment-sec">
+        <div>
+            <h3 id="Assignment" class="mainH">My <span class="color">Works</span></h3>
+            <h2 class="subH">Assignment</h2>
+        </div>
+
+        <div id="ass-card">
+            <div class="card" id="card1">
+                <div class="card-content">
+                <img src="assets/image/icons8-work-96.png" title="work" alt="work icon">
+                <h4>Assignment 1</h4>
+                <p class="description">This is a simple description that appears on hover.</p>
+                <div class="btn-as">
+                    <a href="https://www.figma.com/design/DZEIqeQLWPkYrDLcR4rwl1/portfolio?node-id=0-1&node-type=canvas&t=riUSfKyiJ3hzzJSX-0" target="_blank">
+                        <button class="btn-view">View</button>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1lmSuoAbONRoFhr-ohttFG4ruPayalqBzlMo9dmway2c/edit?tab=t.0" target="_blank">
+                        <button class="btn-view">See More</button>
+                    </a>  </div>
+                </div>
+            </div>
+
+            <div class="card" id="card2">
+                <div class="card-content">
+                <img src="assets/image/icons8-work-96.png" title="work" alt="work icon">
+                <h4>Assignment 2</h4>
+                <p class="description">This is a simple description that appears on hover.</p>
+                <div class="btn-as">
+                    <a href="http://localhost:63342/done/index.html?_ijt=r64mdmkcs2g384qvnu8j1cm4in&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <button class="btn-view">View</button>
+                    </a>
+                    <a href="https://github.com/sehansassara/done" target="_blank">
+                        <button class="btn-view">See More</button>
+                    </a>  </div>
+                </div>
+            </div>
+
+            <div class="card" id="card3">
+                <div class="card-content">
+                <img src="assets/image/icons8-work-96.png" title="work" alt="work icon">
+                <h4>Assignment 3</h4>
+                <p class="description">This is a simple description that appears on hover.</p>
+                <div class="btn-as">
+                    <a href="https://github.com/sehansassara/Assignment-3" target="_blank">
+                        <button class="btn-view">View</button>
+                    </a>
+                    <a href="assignment3-cases.html" target="_blank">
+                        <button class="btn-view">See More</button>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="card" id="card4">
+                <div class="card-content">
+                <img src="assets/image/icons8-work-96.png" title="work" alt="work icon">
+                <h4>Assignment 4</h4>
+                <p class="description">This is a simple description that appears on hover.</p>
+                <div class="btn-as">
+                    <a href="https://github.com/sehansassara/Assignment-3" target="_blank">
+                        <button class="btn-view">View</button>
+                    </a>
+                    <a href="assignment4-cases.html" target="_blank">
+                        <button class="btn-view">See More</button>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="card" id="card5">
+                <div class="card-content">
+                <img src="assets/image/icons8-work-96.png" title="work" alt="work icon">
+                <h4>Assignment 5</h4>
+                <p class="description">This is a simple description that appears on hover.</p>
+                <div class="btn-as">
+                    <a href="assignment/Assignment-7" target="_blank">
+                        <button class="btn-view">View</button>
+                    </a>
+                    <a href="https://github.com/sehansassara/Assignment-7" target="_blank">
+                        <button class="btn-view">See More</button>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="card" id="card6">
+                <div class="card-content">
+                <img src="assets/image/icons8-work-96.png" title="work" alt="work icon">
+                <h4>Assignment 6</h4>
+                <p class="description">This is a simple description that appears on hover.</p>
+                <div class="btn-as">
+                    <a href="http://localhost:63342/Assignment-6/home.html?_ijt=i3ia2qpgu2d2mjjtbjnvqtmmfe&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                        <button class="btn-view">View</button>
+                    </a>
+                    <a href="https://github.com/sehansassara/Assignment-6" target="_blank">
+                        <button class="btn-view">See More</button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 
@@ -561,7 +663,6 @@
             <h3 class="mainH" id="Gallery" data-aos="zoom-in-up"><span class="color">Portfolio</span> About Me</h3>
             <h2 class="subH" data-aos="zoom-in-up">Gallery</h2>
         </div>
-
 
 
         <div class="card_container">
@@ -601,22 +702,24 @@
 
 
 <!--Contact section-->
+
 <main>
     <section class="contact-sec">
         <div id="main,sub">
-            <h3 class="mainH" id="Contact" data-aos="zoom-in-right">Contact <span class="color">Me</span></h3>
-            <h2 class="subH" id="subH" data-aos="zoom-in-left">Contact</h2>
+            <h3 class="mainH" id="Contact">Contact <span class="color">Me</span></h3>
+            <h2 class="subH" id="subH">Contact</h2>
         </div>
 
-        <form>
+        <form id="contact-form">
             <div class="form-email">
-                <input class="email" type="email" name="email" placeholder="Email Address">
-                <button class="sub-bt">Submit</button>
+                <input class="email" id="user_email" type="email" name="email" placeholder="Email Address" required>
+                <button class="sub-bt" type="submit">Submit</button>
             </div>
         </form>
 
-        <section>
-            <div id="left-sec">
+
+        <section id="con-double-sec">
+            <section id="left-sec">
                 <div>
                     <h3 class="my-sto">My Stores</h3>
                 </div>
@@ -631,33 +734,33 @@
                     <a href="#Gallery">Gallery</a>
                     <a href="#Contact">Contact</a>
                 </div>
-            </div>
+            </section>
 
+
+
+
+
+            <section class="right-sec">
+                <div>
+                    <h3 class="get-in-touch">Get In Touch</h3>
+                </div>
+
+                <div  class="data-contact">
+                    <img class="img-contact" src="assets/image/icons8-gmailss-96%20(5).png" title="gmail" alt="gmail">
+                    <span>sehansassara2002@gmail.com</span>
+                </div>
+
+                <div  class="data-contact">
+                    <img class="img-contact" id="img-con" src="assets/image/icons8-location-96.png" title="location" alt="location">
+                    <span>Raththahena,Hiriwadunna</span>
+                </div>
+
+                <div class="data-contact">
+                    <img class="img-contact" src="assets/image/icons8-rotary-dial-telephone-96.png" title="tel" alt="tel">
+                    <span>+(94)766735404</span>
+                </div>
+            </section>
         </section>
-
-
-
-        <section class="right-sec">
-            <div>
-                <h3 class="get-in-touch">Get In Touch</h3>
-            </div>
-
-            <div>
-                <img class="img-contact" src="assets/image/icons8-gmailss-96%20(5).png" title="gmail" alt="gmail">
-                <h3 class="data-contact">sehansassara2002@gmail.com</h3>
-            </div>
-
-            <div>
-                <img class="img-contact" id="img-con" src="assets/image/icons8-location-96.png" title="location" alt="location">
-                <address class="data-contact">Raththahena,Hiriwadunna</address>
-            </div>
-
-            <div>
-                <img class="img-contact" src="assets/image/icons8-rotary-dial-telephone-96.png" title="tel" alt="tel">
-                <h3 class="data-contact">+(94)766735404</h3>
-            </div>
-        </section>
-
         <section class="show-icons">
             <img src="assets/image/icons8-facebook-96%20(3).png" title="facebook" alt="facebook">
             <img src="assets/image/icons8-instagram-96%20(1).png" title="instagram" alt="instagram">
@@ -670,14 +773,70 @@
 
 
 
+
 <footer class="footer-sec">
     <div>
         <h4 class="foo-data">Copyright & copy 2003 by Sehan Sassara  || All Rights Reserved.</h4>
-        <a href="#welcomeSec">
+        <a href="#welcome-sec">
             <img src="assets/image/icons8-up-squared-96.png" title="up" alt="up logo">
         </a>
     </div>
 </footer>
+
+<script>
+    const menu_icon = document.querySelector('.menu-icon');
+    const menu_img = document.getElementById('menu-img');
+    const dropdown_menu = document.querySelector('.dropdown_menu');
+
+    menu_icon.onclick = function () {
+        dropdown_menu.classList.toggle('open');
+
+        const isOpen = dropdown_menu.classList.contains('open');
+
+        menu_img.src = isOpen ? "assets/image/icons8-cross-64.png" : "assets/image/icons8-menu2-96.png";
+    };
+
+
+    // Function to handle orientation changes
+    function handleOrientation(event) {
+        // Get the orientation values
+        let x = event.beta; // In degrees, from -180 to 180 (tilt front/back)
+        let y = event.gamma; // In degrees, from -90 to 90 (tilt left/right)
+
+        // Cap the values to avoid excessive rotation
+        if (x > 15) x = 15;
+        if (x < -15) x = -15;
+        if (y > 15) y = 15;
+        if (y < -15) y = -15;
+
+        // Rotate the cards based on the orientation values
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.transform = `rotateX(${x}deg) rotateY(${y}deg)`;
+        });
+    }
+
+    // Add event listener for device orientation
+    if (window.DeviceOrientationEvent) {
+        window.addEventListener('deviceorientation', handleOrientation);
+    } else {
+        console.log('DeviceOrientationEvent is not supported on your device/browser.');
+    }
+
+</script>
+
+
+
+
+<script src="assets/js/vanilla-tilt-js.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0,
+    });
+</script>
+
 
 <!--AOS-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -685,5 +844,6 @@
     AOS.init();
 </script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/hero.js"></script>
 </body>
 </html>

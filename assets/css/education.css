@@ -1,286 +1,152 @@
-#eduSec{
+#eduSec {
     background: #0E0B01;
     padding: 0 5%;
     position: relative;
     height: auto;
 }
 
-.timeLine{
+.timeLine {
     position: relative;
-    max-width: 1200px;
+    padding: 50px 0;
+    width: 100%;
     margin: 0 auto;
 }
 
-.container{
-    padding: 10px 50px;
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    width: 100%;
     position: relative;
-    width: 42%;
 }
 
-.textBox{
-    position: relative;
-    padding: 20px 30px;
-    background: linear-gradient(to right, #47d447 , white);
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-.right-container{
-    left: 50%;
-}
-
-.left-container{
-    right: 0%;
-}
-
-.part-circle{
-    position: absolute;
-    width: 40px;
-    height: 40px;
+.part-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #00FF08;
     border-radius: 50%;
-    background: green;
-    right: -16px;
-    top: 32px;
-    z-index: 1;
-}
-
-.right-container .part-circle{
-    left: -20px;
-}
-
-.part{
-    position: relative;
-    top: -10px;
-    left: 16px;
-
-}
-
-.left-container-arrow{
-    width: 0;
-    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #15181E;
+    font-weight: bold;
     position: absolute;
-    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid white;
-    right: -9px;
 }
 
-.right-container-arrow{
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid #47d447;
-    left: -9px;
-}
-
-.timeLine::after{
+.timeLine::before {
     content: '';
     position: absolute;
-    width: 6px;
-    height: 100%;
-    background: white;
+    width: 4px;
+    background-color: #00FF08;
     top: 0;
+    bottom: 0;
     left: 50%;
-    margin-left: -3px;
+    transform: translateX(-50%);
     z-index: 0;
 }
 
-.textBox .year{
-    font-weight: 600;
+.textBox {
+    background: linear-gradient(to right, #47d447, white);
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 20px;
+    width: 45%;
+    color: #000000;
+    z-index: 2;
+    position: relative;
+}
 
+.right-container {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.left-container {
+    flex-direction: row;
+    text-align: left;
+}
+
+.right-container-arrow,
+.left-container-arrow {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.right-container-arrow {
+    top: 50%;
+    right: -20px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #00FF08;
+}
+
+.left-container-arrow {
+    top: 50%;
+    left: -20px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #00FF08 transparent transparent;
+}
+
+.year {
     max-width: max-content;
-   /* background: linear-gradient(to right, #44FF2B, #A8D0A3);*/
-
-}
-
-.topic{
+    color: #0E0B01;
+    font-weight: bold;
     display: inline-block;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 321px) {
-    .mainH {
-        font-size: 24px;
-    }
+.topic {
+    font-size: 22px;
+    font-weight: 600;
+    color: #F4FF2B;
+    margin-bottom: 10px;
+}
 
-    .subH {
-        font-size: 53px;
-        bottom: 0.2em;
-    }
-
-    .left-container {
-        left: -4.6%;
-    }
-
+@media screen and (max-width: 768px) {
     .container {
-        padding: 6px 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .textBox {
-        font-size: 10px;
-        font-weight: 400;
+        width: 80%;
+        text-align: center;
     }
 
-    .part-circle {
-        width: 20px;
-        height: 20px;
-    }
-
-    .right-container .part-circle {
-        left: -19px;
-    }
-
-    .part {
-        position: absolute;
-        left: 6px;
-        top: -21px;
-    }
-
-    .right-container {
-        left: 53%;
+    .right-container-arrow,
+    .left-container-arrow {
+        display: none;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .textBox {
+        width: 90%;
+    }
 
-@media (max-width: 376px) and (min-width: 321px) {
+    .part-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
     .mainH {
         font-size: 28px;
     }
 
     .subH {
-        bottom: 0.3em;
-    }
-
-    .left-container {
-        left: -5%;
-    }
-
-    .container {
-        padding: 8px 20px;
-    }
-
-    .textBox {
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    .part-circle {
-        width: 24px;
-        height: 24px;
-    }
-
-    .right-container .part-circle {
-        left: -15px;
-    }
-
-    .part {
-        position: absolute;
-        left: 8px;
-        top: -18px;
-    }
-
-    .right-container{
-        left: 51%;
+        font-size: 40px;
     }
 }
 
-
-@media (max-width: 426px) and (min-width: 376px) {
+@media screen and (max-width: 500px) {
     .mainH {
-        font-size: 33px;
-    }
-
-    .subH {
-        bottom: 0.4em;
-    }
-
-    .left-container {
-        left: -4%;
-    }
-
-    .container {
-        padding: 10px 23px;
-    }
-
-    .textBox {
-        font-size: 13px;
-        font-weight: 400;
-    }
-
-    .part-circle {
-        width: 28px;
-        height: 28px;
-    }
-
-    .right-container .part-circle {
-        left: -14px;
-    }
-
-    .part {
-        position: absolute;
-        left: 10px;
-        top: -16.5px;
+        font-size: 22px;
     }
 }
-
-
-
-@media (max-width: 769px) and (min-width: 426px) {
-    .left-container{
-        left: -6%;
-    }
-
-    .right-container .part-circle{
-        left: -14px;
-    }
-
-    .right-container{
-        left: 49%;
-    }
-}
-
-/*
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-!* Slide-in animation from the right for right-container *!
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-!* Apply the animation when the container becomes visible *!
-.container.visible {
-    opacity: 1;
-    transform: translateY(0); !* Move to original position *!
-}
-
-.left-container.visible {
-    animation: slideInLeft 0.8s forwards;
-}
-
-.right-container.visible {
-    animation: slideInRight 0.8s forwards;
-}*/

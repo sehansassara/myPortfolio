@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-02</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <style>
+        body{
+            background: #020233;
+        }
+
+        div{
+            width: 200px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background: gray;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+        div>h1{
+            width: max-content;
+            height: max-content;
+            color: white;
+
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        div::before{
+            content: "";
+            border: 10px solid white;
+            border-radius: 100%;
+            border-top-color: red;
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>RWDA</h1>
+</div>
+</body>
+</html>

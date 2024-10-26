@@ -1,48 +1,83 @@
-#skillSec{
-    background: #150C00;
-    padding: 0 5%;
+#skillSec {
+    background: linear-gradient(135deg, #150C00, #2E1D12);
+    padding: 40px 5%;
     position: relative;
-    height: 65em;
+    height: auto;
     margin: 0;
+    overflow: hidden;
+    transition: background 2s ease-in-out;
 }
 
-.techSkill{
+.techSkill {
     font-family: "Inter", sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: white;
-    margin-left: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #F4FF2B;
+    text-align: center;
+    margin: 0 auto 40px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.7);
+    animation: pulse-glow 2.5s infinite alternate ease-in-out, color-glow 3s infinite alternate ease-in-out;
+    transition: transform 0.2s ease;
 }
 
-.techSkillBar{
-    position: relative;
-    width: 100%;
-    max-width: 71em;
-    height: 273px;
-    background: #0E0B01;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 30px;
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
-    padding: 0 20px;
+@keyframes pulse-glow {
+    0% {
+        transform: scale(1);
+        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3), 5px 5px 15px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        transform: scale(1.05);
+        text-shadow: 4px 4px 16px rgba(255, 255, 255, 0.5), 7px 7px 20px rgba(0, 0, 0, 0.9);
+    }
+}
+
+@keyframes color-glow {
+    0% {
+        color: #F4FF2B;
+    }
+    100% {
+        color: #FFD700;
+    }
+}
+
+.techSkillBar {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    background: #0E0B01;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.techSkillBar:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.7);
+}
 
-.img{
-    width: 100%;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
     max-width: 89px;
     height: auto;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 10px;
-    margin: auto;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.circular-bar{
+.img:hover {
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.circular-bar {
     width: 150px;
     height: 150px;
     background: conic-gradient(#6ef442 1.5deg, #e8f0f7 0deg);
@@ -50,354 +85,81 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
--6px -6px 10px -1px rgba(255,255,255,0);
-    margin-bottom: 40px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 15px rgba(255, 255, 255, 0.1);
     position: relative;
-    left: 40px;
-    top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    animation: float 5s ease-in-out infinite;
 }
 
-.circular-bar::before{
+.circular-bar:hover {
+    transform: scale(1.1);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.circular-bar::before {
     content: "";
     position: absolute;
     width: 110px;
     height: 110px;
     background: #e8f0f7;
     border-radius: 50%;
-    box-shadow:inset 6px 6px 10px -1px rgba(0,0,0,0.15),
-   inset -6px -6px 10px -1px rgba(255,255,255,0.7);
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.15), inset -6px -6px 10px rgba(255, 255, 255, 0.7);
 }
 
-.percent{
+.percent {
     z-index: 1;
-    font-size: 20px;
+    font-size: 22px;
     color: black;
     position: absolute;
+    animation: fadeIn 1s ease;
 }
 
-#proSkill{
-    top: 10px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-.title{
-    font-size: 15px;
-    position: absolute;
-    bottom: 25px;
-    z-index: 1000;
+.title {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 60px;
+    color: #000000;
+    z-index: 1;
 }
 
-
-@media screen and (max-width: 321px) {
-    .mainH{
+@media screen and (max-width: 1024px) {
+    .techSkill {
         font-size: 24px;
     }
 
-    #Skills{
-        font-size: 29px;
-    }
-
-    #skillSec {
-        padding: 0 3%;
-        height: 79em;
-    }
-
-    .techSkill {
-        font-size: 14px;
-        margin-left: -175px;
-        text-align: center;
-    }
-
     .techSkillBar {
-        max-width: 8.5em;
-        height: auto;
-        padding: 15px 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        margin: 0 auto;
-        margin-left: 2px;
-    }
-
-    .img img{
-        width: 70px;
-    }
-
-    .img {
-        max-width: 69px;
-        left: 0;
-        right: 0;
-        margin: 10px auto;
-    }
-
-    .circular-bar {
-        width: 100px;
-        height: 100px;
-        margin: 10px auto;
-        left: 0;
-        top: 0;
-    }
-
-    .circular-bar::before {
-        width: 70px;
-        height: 70px;
-    }
-
-    .percent {
-        font-size: 16px;
-    }
-
-    .title {
-        position: relative;
-        font-size: 10px;
-        margin-bottom: -55px;
-
-    }
-
-    #proSkill{
-        font-size: 14px;
-        margin-left: 160px;
-        text-align: center;
-        margin-top: -178.0vh;
-    }
-
-    #proSkillBar{
-        margin-left: 160px;
-    }
-}
-
-
-@media screen and (max-width: 376px) and (min-width: 321px) {
-    #skillSec {
-        padding: 0 3%;
-        height: 79em;
-    }
-
-    .techSkill {
-        font-size: 16px;
-        margin-left: -210px;
-        text-align: center;
-    }
-
-    .techSkillBar {
-        max-width: 10em;
-        height: auto;
-        padding: 15px 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        margin: 0 auto;
-        margin-left: 5px;
-    }
-
-    .img img{
-        width: 70px;
-    }
-
-    .img {
-        max-width: 69px;
-        left: 0;
-        right: 0;
-        margin: 10px auto;
-    }
-
-    .circular-bar {
-        width: 100px;
-        height: 100px;
-        margin: 10px auto;
-        left: 0;
-        top: 0;
-    }
-
-    .circular-bar::before {
-        width: 70px;
-        height: 70px;
-    }
-
-    .percent {
-        font-size: 16px;
-    }
-
-    .title {
-        position: relative;
-        font-size: 10px;
-        margin-bottom: -55px;
-
-    }
-
-    #proSkill{
-        font-size: 16px;
-        margin-left: 200px;
-        text-align: center;
-        margin-top: -178.4vh;
-    }
-
-    #proSkillBar{
-        margin-left: 190px;
-    }
-}
-
-@media (max-width: 426px) and (min-width: 376px) {
-    #skillSec {
-        padding: 0 3%;
-        height: 79em;
-    }
-
-    .techSkill {
-        font-size: 18px;
-        margin-left: -210px;
-        text-align: center;
-    }
-
-    .techSkillBar {
-        max-width: 10em;
-        height: auto;
-        padding: 15px 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        margin: 0 auto;
-        margin-left: 18px;
-    }
-
-    .img img{
-        width: 70px;
-    }
-
-    .img {
-        max-width: 69px;
-        left: 0;
-        right: 0;
-        margin: 10px auto;
-    }
-
-    .circular-bar {
-        width: 100px;
-        height: 100px;
-        margin: 10px auto;
-        left: 0;
-        top: 0;
-    }
-
-    .circular-bar::before {
-        width: 70px;
-        height: 70px;
-    }
-
-    .percent {
-        font-size: 16px;
-    }
-
-    .title {
-        position: relative;
-        font-size: 10px;
-        margin-bottom: -55px;
-
-    }
-
-    #proSkill{
-        font-size: 18px;
-        margin-left: 200px;
-        text-align: center;
-        margin-top: -179.0vh;
-    }
-
-    #proSkillBar{
-        margin-left: 220px;
-    }
-}
-
-
-@media (max-width: 769px) and (min-width: 426px) {
-    #skillSec {
-        padding: 0 3%;
-        height: 45em;
-    }
-
-    .techSkill {
-        font-size: 22px;
-        margin-left: 30px;
-    }
-
-    .techSkillBar {
-        max-width: 50em;
-        height: 200px;
-        padding: 0 10px;
-        grid-template-columns: repeat(5, 1fr);
-        border-radius: 20px;
-        margin-left: -15px;
-    }
-
-
-    .img img{
-       width: 80px;
-    }
-
-    .img {
-        max-width: 10px;
-        top: 5px;
-        margin-bottom: 15px;
-        left: -20px;
-    }
-
-    .circular-bar {
-        width: 90px;
-        height: 90px;
-        top: 0;
-    }
-
-    .circular-bar::before {
-        width: 70px;
-        height: 70px;
-    }
-
-    .percent {
-        font-size: 16px;
-    }
-
-    #proSkill {
-        top: 5px;
-    }
-
-    .title {
-        font-size: 10px;
-        bottom: 10px;
-    }
-}
-
-
-@media (max-width: 1024px) and (min-width: 769px) {
-    #skillSec {
-        padding: 0 4%;
-        height: 53em;
-    }
-
-    .techSkill {
-        font-size: 26px;
-        margin-left: 40px;
-    }
-
-    .techSkillBar {
-        max-width: 60em;
-        height: 230px;
-        padding: 0 15px;
-        grid-template-columns: repeat(5, 1fr);
-        border-radius: 25px;
-        margin-right: 10px;
-    }
-
-    .img {
-        max-width: 65px;
-        top: 5px;
-        margin-bottom: 20px;
-       left: -15px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;
+        max-width: 800px;
+        margin: 20px auto;
     }
 
     .circular-bar {
         width: 110px;
         height: 110px;
-
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -10px;
     }
 
     .circular-bar::before {
@@ -409,12 +171,84 @@
         font-size: 18px;
     }
 
-    #proSkill {
-        top: 8px;
+    .title {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #skillSec {
+        padding: 0 3%;
+    }
+
+    .techSkill {
+        font-size: 22px;
+    }
+
+    .techSkillBar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        max-width: 600px;
+    }
+
+    .circular-bar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circular-bar::before {
+        width: 80px;
+        height: 80px;
+    }
+
+    .percent {
+        font-size: 16px;
     }
 
     .title {
-        font-size: 11px;
-        bottom: 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #skillSec {
+        padding: 0 3%;
+    }
+
+    .techSkill {
+        font-size: 20px;
+    }
+
+    .techSkillBar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 10px;
+        max-width: 400px;
+    }
+
+    .circular-bar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .circular-bar::before {
+        width: 70px;
+        height: 70px;
+    }
+
+    .percent {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .techSkillBar {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 }

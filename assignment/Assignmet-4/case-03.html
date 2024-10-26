@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-03</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        :root{
+            --width: 150px;
+            --height: 80px;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        div{
+            width: 150px;
+            height: 80px;
+            background: #020233;
+            border-radius: 10px;
+
+            animation: my-animation 3s infinite alternate;
+        }
+
+        @keyframes my-animation {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+                background: #020233;
+            }
+            25%{
+                margin-left:calc(100vw - var(--width));
+                margin-top: 0;
+                background: #a88f1c;
+                transform: rotate(180deg);
+            }
+            50%{
+                margin-left:calc(100vw - var(--width));
+                margin-top: calc(100vh - var(--height));
+                background: #0c957c;
+                transform: rotate(0deg);
+            }
+            75%{
+                margin-left:0;
+                margin-top: calc(100vh - var(--height));
+                background: #1e9f08;
+                transform: rotate(-180deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>

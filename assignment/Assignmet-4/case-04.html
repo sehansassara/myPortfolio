@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-04</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <style>
+        div{
+            width: 5px;
+            aspect-ratio: 1/1;
+            border: 5px solid mediumpurple;
+            border-radius: 100%;
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            animation: animi 3000ms infinite;
+        }
+
+        @keyframes animi {
+            from{
+                width: 5px;
+            }
+            to{
+                width: 200px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

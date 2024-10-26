@@ -1,9 +1,83 @@
-#aboutSec{
+#about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 5%;
+    align-items: start;
+    background-color: #1B1A14;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+#about-grid section {
+    background-color: #181717;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-grid section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(166, 164, 164, 0.4);
+}
+
+.hhhh h3 {
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#ul1 {
+    list-style: none;
+    padding: 0;
+}
+
+#ul1 li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ee980a;
+    font-family: "Inter", sans-serif;
+}
+
+#ul1 .color2 {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+.flex-pic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+#imgInter img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#imgInter img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#aboutSec {
     background: #0E0B01;
     padding: 0 5%;
     position: relative;
     height: auto;
 }
+
 :root
 {
     --x : 45deg;
@@ -49,135 +123,47 @@
     max-width: 85%;
     left: 100px;
     top: -40px;
-    line-height: 1.6; /* More readable line spacing */
+    line-height: 1.6;
 }
 
-.hhhh {
-    position: relative;
-    height: 70px;
-}
-
-#perDetails {
-    position: absolute;
-    font-family: "Inter", sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: white;
-    left: 100px;
-}
-
-#myInter {
-    position: absolute;
-    font-family: "Inter", sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: white;
-    left: 30em;
-    top: 0;
-}
-
-#ul1 {
-    list-style: none;
-    color: #FFA600;
-    margin-left: 150px;
-    font-size: 20px;
-    padding: 0;
-    margin-top: 30px;
-    gap: 1000px;
-}
-
-#ul1 li {
-    display: grid;
-    align-items: center;
-    margin-bottom: 10px;
-    grid-template-columns: auto 1fr;
-    gap: 90px;
-}
-
-#ul1 li:nth-child(2) {
-    gap: 110px;
-}
-
-#ul1 li:nth-child(3) {
-    gap: 112px;
-}
-
-#ul1 li:nth-child(4) {
-    gap: 95px;
-}
-
-#ul1 li:nth-child(5) {
-    gap: 78px;
-}
-
-.color2 {
-    color: white;
-}
-
-#imgInter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    width: 350px;
-   /* margin: 0 auto;*/
-   /* position: relative;*/
-    left: 390px;
-    bottom: 175px;
-    margin-left: 53em;
-
-
-}
-
-.flex-pic{
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    position: relative;
-    top: -10em;
-}
-#imgInter img {
-    width: 97px;
-    height: 70px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-}
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 120px;
 }
 
-#download{
+#download {
     position: relative;
     font-size: 1.5rem;
     font-weight: 600;
-    transition: .5s;
+    transition: 0.5s;
     overflow: hidden;
     bottom: 70px;
     width: 250px;
     height: 45px;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     border-radius: 25px;
+    background: rgba(56, 29, 14, 0.45);
+    border: 1px solid #0E0B01;
+    cursor: pointer;
+    color: white;
 }
 
-#download div{
+
+#download div {
     position: absolute;
     inset: -5px;
     display: block;
     border-radius: 25px;
-}
-
-#download div,
-#download div:nth-child(2){
     background: linear-gradient(var(--x), #f19b0f 0%, #d18a0f 30%, #0E0B01 50%, #d18a0f 70%, #d18a0f 100%);
 }
 
-#download div:nth-child(2){
+#download div:nth-child(2) {
     filter: blur(10px);
 }
 
-#download span{
+#download span {
     position: absolute;
     top: 0;
     left: 0;
@@ -187,570 +173,178 @@
     justify-content: center;
     align-items: center;
     color: white;
-    border: 1px solid #0E0B01;
     border-radius: 25px;
     background: rgba(56, 29, 14, 0.45);
-    overflow: hidden;
+    border: 1px solid #0E0B01;
 }
 
-#download div::before{
+
+#download div::before {
     content: '';
     position: absolute;
     top: 0;
     left: -50px;
     width: 100px;
     height: 100px;
-    background: rgba(255,255,255,0.075);
-}
-
-@media screen and (max-width: 321px) {
-    #aboutSec {
-        padding: 0 2%;
-    }
-
-    .mainH {
-        font-size: 24px;
-        gap: 8px;
-        top: 8px;
-    }
-
-    .subH {
-        font-size: 70px;
-        left: 0;
-        bottom: 0.4em;
-    }
-
-    #myDetails {
-        font-size: 11px;
-        max-width: 85%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -5px;
-    }
-
-    .hhhh {
-        height: 40px;
-    }
-
-    #perDetails {
-        font-size: 14px;
-        left: 32px;
-        top: -2px;
-    }
-
-    #myInter {
-        font-size: 14px;
-        left: 35px;
-        top: 11.5em;
-    }
-
-    #ul1 {
-        margin-left: 50px;
-        font-size: 13px;
-        margin-top: 2px;
-        gap: 0;
-    }
-
-    #ul1 li {
-        gap: 4px;
-    }
-
-    #ul1 li:nth-child(1) {
-        gap: 24px;
-    }
-
-    #ul1 li:nth-child(2) {
-        gap: 38px;
-    }
-
-    #ul1 li:nth-child(3) {
-        gap: 40px;
-    }
-
-    #ul1 li:nth-child(4) {
-        gap: 28px;
-    }
-
-    #ul1 li:nth-child(5) {
-        gap: 15px;
-    }
-
-    .color2 {
-        color: white;
-    }
-
-    #imgInter {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 13px;
-        width: 250px;
-        bottom: 120px;
-        margin-left: 25px; /* Center or adjust as needed */
-        margin-top: 11.5em;
-        margin-bottom: -1.5em;
-    }
-
-    .flex-pic {
-        top: -8em;
-    }
-
-    #imgInter img {
-        width: 50px;
-        height: 40px;
-        object-fit: cover;
-    }
-
-    .button {
-        justify-content: center;
-    }
-
-    #download {
-        font-size: 0.9rem;
-        bottom: 35px;
-        width: 160px;
-        height: 30px;
-    }
-
-    #download span {
-        font-size: 0.85rem;
-    }
-}
-
-@media screen and (max-width: 376px) and (min-width: 321px) {
-    #aboutSec {
-        padding: 0 2%;
-    }
-
-    .mainH {
-        font-size: 35px;
-        gap: 8px;
-        top: 8px;
-    }
-
-    .subH {
-        font-size: 70px;
-        left: 0;
-        bottom: 0.2em;
-    }
-
-    #myDetails {
-        font-size: 13px;
-        max-width: 85%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -5px;
-    }
-
-    .hhhh {
-        height: 40px;
-    }
-
-    #perDetails {
-        font-size: 16px;
-        left: 32px;
-        top: -2px;
-    }
-
-    #myInter {
-        font-size: 16px;
-        left: 35px;
-        top: 11.5em;
-    }
-
-    #ul1 {
-        margin-left: 70px;
-        font-size: 15px;
-        margin-top: 2px;
-        gap: 0;
-    }
-
-    #ul1 li {
-        gap: 4px;
-    }
-
-    #ul1 li:nth-child(1) {
-        gap: 24px;
-    }
-
-    #ul1 li:nth-child(2) {
-        gap: 38px;
-    }
-
-    #ul1 li:nth-child(3) {
-        gap: 40px;
-    }
-
-    #ul1 li:nth-child(4) {
-        gap: 28px;
-    }
-
-    #ul1 li:nth-child(5) {
-        gap: 15px;
-    }
-
-    .color2 {
-        color: white;
-    }
-
-    #imgInter {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 13px;
-        width: 250px;
-        bottom: 120px;
-        margin-left: 25px; /* Center or adjust as needed */
-        margin-top: 11.5em;
-        margin-bottom: -1.5em;
-    }
-
-    .flex-pic {
-        top: -8em;
-    }
-
-    #imgInter img {
-        width: 50px;
-        height: 40px;
-        object-fit: cover;
-    }
-
-    .button {
-        justify-content: center;
-    }
-
-    #download {
-        font-size: 0.9rem;
-        bottom: 35px;
-        width: 160px;
-        height: 30px;
-    }
-
-    #download span {
-        font-size: 0.85rem;
-    }
-}
-
-@media screen and (max-width: 426px) and (min-width: 376px) {
-    #aboutSec {
-        padding: 0 2%;
-    }
-
-    .mainH {
-        font-size: 35px;
-        gap: 8px;
-        top: 8px;
-    }
-
-    .subH {
-        font-size: 70px;
-        left: 0;
-        bottom: 0.2em;
-    }
-
-    #myDetails {
-        font-size: 13px;
-        max-width: 85%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -5px;
-    }
-
-    .hhhh {
-        height: 40px;
-    }
-
-    #perDetails {
-        font-size: 16px;
-        left: 32px;
-        top: -2px;
-    }
-
-    #myInter {
-        font-size: 16px;
-        left: 35px;
-        top: 11.5em;
-    }
-
-    #ul1 {
-        margin-left: 70px;
-        font-size: 15px;
-        margin-top: 2px;
-        gap: 0;
-    }
-
-    #imgInter{
-        margin-top: 11.5em;
-        margin-bottom: -1.5em;
-    }
-
-    #ul1 li {
-        gap: 4px;
-    }
-
-    #ul1 li:nth-child(1) {
-        gap: 24px;
-    }
-
-    #ul1 li:nth-child(2) {
-        gap: 38px;
-    }
-
-    #ul1 li:nth-child(3) {
-        gap: 40px;
-    }
-
-    #ul1 li:nth-child(4) {
-        gap: 28px;
-    }
-
-    #ul1 li:nth-child(5) {
-        gap: 15px;
-    }
-
-    .color2 {
-        color: white;
-    }
-
-    #imgInter {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 13px;
-        width: 250px;
-        bottom: 120px;
-        margin-left: 0; /* Center or adjust as needed */
-    }
-
-    .flex-pic {
-        top: -8em;
-    }
-
-    #imgInter img {
-        width: 60px;
-        height: 40px;
-        object-fit: cover;
-    }
-
-    .button {
-        justify-content: center;
-    }
-
-    #download {
-        font-size: 0.9rem;
-        bottom: 35px;
-        width: 160px;
-        height: 30px;
-    }
-
-    #download span {
-        font-size: 0.85rem;
-    }
+    background: rgba(255, 255, 255, 0.075);
 }
 
 
-@media screen and (max-width: 769px) and (min-width: 426px) {
-    #aboutSec {
-        padding: 0 3%;
-    }
-
-    .mainH {
-        font-size: 40px;
-        gap: 10px;
-        top: 10px;
-    }
-
-    .subH {
-        font-size: 80px;
-        left: 0;
-        bottom: 0.3em;
-    }
-
-    #myDetails {
-        font-size: 16px;
-        max-width: 90%;
-        left: 30px;
-        top: -20px;
-    }
-
-    .hhhh {
-        height: 45px;
-    }
-
-    #perDetails {
-        font-size: 20px;
-        left: 30px;
-    }
-
-    #myInter {
-        font-size: 20px;
-        left: 19em;
-    }
-
-    #ul1 {
-        margin-left: 80px;
-        font-size: 16px;
-        margin-top: 20px;
-        gap: 0;
-    }
-
-    #ul1 li {
-        gap: 5px;
-    }
-
-    #ul1 li:nth-child(1) {
-        gap: 26px;
-    }
-
-    #ul1 li:nth-child(2) {
-        gap: 40px;
-    }
-
-    #ul1 li:nth-child(3) {
-        gap: 42px;
-    }
-
-    #ul1 li:nth-child(4) {
+@media screen and (max-width: 1024px) {
+    #about-grid {
+        grid-template-columns: 1fr;
         gap: 30px;
-    }
-
-    #ul1 li:nth-child(5) {
-        gap: 17px;
-    }
-
-
-    .color2 {
-        color: white;
-    }
-
-    #imgInter {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
-        width: 280px;
-        bottom: 130px;
-        margin-left: 24em;
-    }
-
-    .flex-pic {
-        top: -8.5em;
-    }
-
-    #imgInter img {
-        width: 65px;
-        height: 45px;
-        object-fit: cover;
-    }
-
-    .button {
-        justify-content: center;
-    }
-
-    #download {
-        font-size: 1rem;
-        bottom: 40px;
-        width: 180px;
-        height: 35px;
-    }
-
-    #download span {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-    #aboutSec {
-        padding: 0 3%;
     }
 
     .mainH {
         font-size: 48px;
-        gap: 15px;
-        top: 0;
     }
 
     .subH {
         font-size: 96px;
-        left: 0.1em;
-        bottom: 0.4em;
-    }
-
-    #myDetails {
-        font-size: 18px;
-        max-width: 90%;
-        left: 50px;
-        top: -30px;
-    }
-
-    .hhhh {
-        height: 50px;
-    }
-
-    #perDetails {
-        font-size: 24px;
-        left: 50px;
-    }
-
-    #myInter {
-        font-size: 24px;
-        left: 24em;
-    }
-
-    #ul1 {
-        margin-left: 100px;
-        font-size: 18px;
-        margin-top: 25px;
-        gap: 0;
-    }
-
-    #ul1 li {
-        gap: 70px;
-    }
-
-
-    #ul1 li:nth-child(1) {
-        gap: 92px;
-    }
-
-    #ul1 li:nth-child(5) {
-        gap: 80px;
-    }
-
-
-    .color2 {
-        color: white;
-    }
-
-    #imgInter {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
-        width: 300px;
-        left: 290px;
-        bottom: 140px;
-        margin-left: 35em;
-    }
-
-    .flex-pic {
-        top: -9.5em;
-    }
-
-    #imgInter img {
-        width: 80px;
-        height: 60px;
-    }
-
-    .button {
-        justify-content: center;
-    }
-
-    #download {
-        font-size: 1.2rem;
-        bottom: 50px;
-        width: 200px;
-        height: 40px;
-    }
-
-    #download span {
-        font-size: 1rem;
     }
 }
 
+@media screen and (max-width: 768px) {
+    #about-grid {
+        padding: 20px;
+        gap: 20px;
+    }
 
+    .mainH {
+        font-size: 40px;
+    }
 
+    .subH {
+        font-size: 72px;
+    }
 
+    #myDetails{
+        left: 60px;
+        top: -32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about-grid {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .mainH {
+        font-size: 32px;
+    }
+
+    .subH {
+        font-size: 56px;
+    }
+
+    #myDetails {
+        font-size: 14px;
+        left: 10px;
+        top: -20px;
+    }
+
+    #download {
+
+        width: 200px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    #about-grid {
+        max-width: 100%;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .mainH {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .subH {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #myDetails {
+        font-size: 12px;
+        left: 5px;
+        top: -15px;
+        max-width: 100%;
+    }
+
+    #ul1 li {
+        font-size: 16px;
+    }
+
+    #imgInter img {
+        width: 60px;
+        height: 60px;
+        margin-left: 40px;
+    }
+
+    #download {
+        width: 180px;
+        height: 35px;
+    }
+
+    .button {
+        margin-top: 95px;
+        padding-bottom: 0px;
+    }
+}
+.button span{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 350px) {
+    #about-grid {
+        max-width: 100%;
+        padding: 3px;
+        gap: 3px;
+    }
+
+    .mainH {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .subH {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #myDetails {
+        font-size: 11px;
+        left: 0;
+        top: -10px;
+        max-width: 100%;
+    }
+
+    #ul1 li {
+        font-size: 14px;
+    }
+
+    #imgInter img {
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    #download {
+        width: 150px;
+        height: 30px;
+    }
+
+    .button {
+        margin-top: 104px;
+        padding-bottom: 0px;
+    }
+
+    .button span {
+        font-size: 10px;
+    }
+}

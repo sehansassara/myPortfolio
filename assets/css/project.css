@@ -26,7 +26,7 @@
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
-    color: #000000;
+    color: #ffffff;
     text-shadow: 0 5px 10px #0004;
 }
 
@@ -36,13 +36,29 @@
     line-height: 1.3em;
 }
 
-.project-buttons{
-    letter-spacing: 3px;
-    font-weight: 500;
-    background-color: transparent;
-    color: #130e0e;
-    border: 1px solid #130e0e;
+.project-buttons {
+       letter-spacing: 1px;
+       font-weight: 600;
+       font-size: 0.9rem;
+       padding: 10px 20px;
+       border-radius: 6px;
+       background-color: #000;
+       color: #fff;
+       cursor: pointer;
+       outline: none;
+       border: none;
+       transition: all 0.3s ease;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   }
+
+.project-buttons:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
 }
+
+
 
 
 

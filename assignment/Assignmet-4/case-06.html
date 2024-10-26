@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-06</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <style>
+        .sky{
+            width: 100%;
+            height: 100vh;
+            background: url("assets/images/sky.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .road{
+            width: 500%;
+            height: 200px;
+            display: block;
+            background: url("assets/images/road.jpg");
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation: road-ani 5s linear infinite;
+        }
+
+        .city{
+            width: 500%;
+            height: 300px;
+            background: url("assets/images/city.png");
+            position: absolute;
+            bottom: 150px;
+            background-repeat: repeat-x;
+            animation: city-ani 20s linear infinite;
+        }
+
+        .car{
+            width: 400px;
+            position: absolute;
+
+            bottom: 100px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .car img{
+            width: 500px;
+            animation: car-ani 1s linear infinite;
+        }
+
+        .wheel{
+            position: absolute;
+            left: 50%;
+            bottom: 238px;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .wheel img{
+            width: 92px;
+            aspect-ratio: 1/1;
+            animation: wheel-ani 1s linear infinite;
+        }
+
+        .back-wheel{
+            position: absolute;
+            left: -158px;
+
+        }
+
+        .front-wheel{
+            position: absolute;
+            left: 149px;
+        }
+
+        @keyframes road-ani {
+            100%{
+                transform: translateX(-3400px);
+            }
+        }
+
+        @keyframes city-ani {
+            100%{
+                transform: translateX(-1700px);
+            }
+        }
+
+        @keyframes car-ani {
+            100%{
+                transform: translateY(-1px);
+            }
+            50%{
+                transform: translateY(1px);
+            }
+            0%{
+                transform: translateY(-1px);
+            }
+        }
+        
+        @keyframes wheel-ani {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="sky">
+    <div class="road"></div>
+    <div class="city"></div>
+
+    <div class="car">
+        <img src="assets/images/car.png">
+    </div>
+
+    <div class="wheel">
+        <img src="assets/images/wheel.png" class="back-wheel">
+        <img src="assets/images/wheel.png" class="front-wheel">
+    </div>
+</div>
+</body>
+</html>
