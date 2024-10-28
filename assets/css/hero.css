@@ -37,6 +37,7 @@
     top: 53%;
     left: 25%;
 
+    mix-blend-mode: multiply;
     transform: translateY(-50%);
     width: 550px;
     height: auto;
