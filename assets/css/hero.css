@@ -11,10 +11,10 @@
     scroll-behavior: smooth;
 }
 
-#welcome-sec img{
+#welcome-sec #moon,
+#welcome-sec #mountains_front,
+#welcome-sec #mountains_behind{
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,25 +32,42 @@
 #welcome-sec img#mountains_front{
     z-index: 10;
 }
+#my-pic {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+
+    transform: translateY(-50%);
+    width: 550px;
+    height: auto;
+    z-index: 4;
+    object-fit: cover;
+    pointer-events: none;
+    overflow: hidden;
+}
 
 #text{
     position: absolute;
-    right: 300px;
-    color: #ffffff;
+    right: 250px;
+    bottom: 150px;
+    background: linear-gradient(#E3EAF4, #8B9ED1); /* Lighter blue gradient for readability */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
 }
 
 #btnexplore {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 40px;
+    position: absolute;
     background: #ffffff;
     color: #2b1055;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
     font-size: 1.5em;
-    transform: translateY(100px);
+    transform: translateY(150px);
+    z-index: 5;
 }
 
 #Name{
@@ -95,3 +112,100 @@
         left: 2vw;
     }
 }
+/*
+!* Hero Section Styling *!
+#welcome-sec {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2b1055, #7597de);
+    scroll-behavior: smooth;
+}
+
+!* Parallax Image Styling *!
+#welcome-sec #moon,
+#welcome-sec #mountains_front,
+#welcome-sec #mountains_behind
+!*#welcome-sec #my-pic*!{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#stars {
+    z-index: 1;
+}
+
+#moon {
+    z-index: 2;
+}
+
+#mountains_behind {
+    z-index: 3;
+}
+
+#welcome-sec img#mountains_front{
+    z-index: 10;
+}
+
+#my-pic {
+    position: absolute;
+    top: 50%; !* Center vertically within the section *!
+    !* Fixed distance from the left edge *!
+    transform: translateY(-50%); !* Vertically center without horizontal shift *!
+    width: 600px; !* Fixed width to prevent resizing *!
+    height: auto; !* Maintain aspect ratio *!
+    z-index: 4;
+    object-fit: cover;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+
+#text {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ffffff;
+    font-size: 4vw;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+#btnexplore {
+    position: absolute;
+
+    background: #ffffff;
+    color: #2b1055;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transform: translateY(100px);
+    z-index: 5;
+}
+#Name{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15vh;
+    margin: auto;
+    height: fit-content;
+    font-family: "Inter", sans-serif;
+    font-size: 2em;
+    color: white;
+    transform: scale(1) rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+#Name:hover {
+    transform: scale(1.2);
+}*/
