@@ -24,6 +24,7 @@
 
 #welcome-sec img#moon{
     mix-blend-mode: screen;
+    left: 40px;
 }
 
 .color{
@@ -40,7 +41,7 @@
     mix-blend-mode: multiply;
     transform: translateY(-50%);
     width: 550px;
-    height: auto;
+    height: 100%;
     z-index: 4;
     object-fit: cover;
     pointer-events: none;
@@ -49,7 +50,7 @@
 
 #text{
     position: absolute;
-    right: 250px;
+    right: -319px;
     bottom: 150px;
     background: linear-gradient(#E3EAF4, #8B9ED1); /* Lighter blue gradient for readability */
     -webkit-background-clip: text;
@@ -59,7 +60,7 @@
     z-index: 9;
 }
 
-#btnexplore {
+/*#btnexplore {
     position: absolute;
     background: #ffffff;
     color: #2b1055;
@@ -69,7 +70,7 @@
     font-size: 1.5em;
     transform: translateY(150px);
     z-index: 5;
-}
+}*/
 
 #Name{
     position: absolute;
@@ -91,12 +92,35 @@
 
 @media screen and (max-width: 1251px) {
     #text{
-        right: 187px;
+        right: -612px;
         font-size: 6.5em;
     }
 
     #welcome-sec img#moon{
        left: 41px;
+    }
+
+    #my-pic {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #text{
+        right: -612px;
+        font-size: 6.5em;
+    }
+
+    #welcome-sec img#moon{
+        left: 41px;
+    }
+
+    #my-pic {
+        width: 550px;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
     }
 }
 
@@ -107,7 +131,16 @@
     }
 
     #text{
-        right: 85px;
+        right: -651px;
+    }
+
+    #my-pic {
+        width: 500px;
+        left: 21%;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
     }
 }
 
@@ -118,8 +151,17 @@
     }
 
     #text{
-        right: -153px;
+        right: -490px;
         font-size: 4.5em;
+    }
+
+    #my-pic {
+        width: 432px;
+        left: 0%;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
     }
 }
 
@@ -127,6 +169,14 @@
     #Name {
         font-size: 1.6em;
         left: 2vw;
+    }
+
+    #my-pic {
+        width: 377px;
+    }
+
+    #welcome-sec img#moon{
+        left: 147px;
     }
 }
 /*
