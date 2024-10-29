@@ -89,6 +89,17 @@
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 1251px) {
+    #text{
+        right: 187px;
+        font-size: 6.5em;
+    }
+
+    #welcome-sec img#moon{
+       left: 41px;
+    }
+}
+
 @media screen and (max-width: 769px) {
     #Name {
         font-size: 1.8em;
@@ -104,6 +115,11 @@
     #Name {
         font-size: 1.8em;
         left: 5vw;
+    }
+
+    #text{
+        right: -153px;
+        font-size: 4.5em;
     }
 }
 
