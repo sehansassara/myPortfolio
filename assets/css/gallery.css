@@ -53,19 +53,27 @@
 }
 
 @media screen and (max-width: 321px) {
+    .gallery-sec{
+        height: 90vh;
+    }
+
     .card_container{
         margin-top: 42px;
     }
 }
 
 @media screen and (max-width: 376px) and (min-width: 321px) {
+    .gallery-sec{
+        height: 90vh;
+    }
+
     .card_container{
         margin-top: 42px;
     }
 }
 @media screen and (max-width: 426px) and (min-width: 376px) {
     .gallery-sec{
-        height: 115vh;
+        height: 90vh;
     }
 
     .card_container{
@@ -75,7 +83,7 @@
 
 @media screen and (max-width: 769px) and (min-width: 426px) {
     .gallery-sec{
-        height: 115vh;
+        height: 90vh;
     }
 
     .card_container{

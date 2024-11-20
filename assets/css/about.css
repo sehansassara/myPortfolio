@@ -223,6 +223,10 @@
         left: 60px;
         top: -32px;
     }
+
+    .button span{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -246,7 +250,6 @@
     }
 
     #download {
-
         width: 200px;
         height: 40px;
     }
@@ -295,9 +298,11 @@
         margin-top: 95px;
         padding-bottom: 0px;
     }
-}
-.button span{
-    font-size: 12px;
+
+    .button span{
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width: 350px) {
