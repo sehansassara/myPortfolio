@@ -142,7 +142,7 @@
 
 
         <div class="button">
-            <a id="download" href="">
+            <a id="download" href="assets/pdf/Modern%20Professional%20CV%20Resume.pdf" download="My_CV">
                 <div></div>
                 <div></div>
                 <span>DOWNLOAD CV</span>
@@ -725,11 +725,11 @@
                 </div>
 
                 <div class="a-link">
-                    <a href="#Home">Home</a>
+                    <a href="#welcome-sec">Home</a>
                     <a href="#About">About</a>
                     <a href="#Skills">Skill</a>
                     <a href="#Education">Education</a>
-                    <a href="#Projects">Project</a>
+                    <a href="#proSec">Project</a>
                     <a href="#Assignment">Assignment</a>
                     <a href="#Gallery">Gallery</a>
                     <a href="#Contact">Contact</a>
@@ -761,13 +761,32 @@
                 </div>
             </section>
         </section>
-        <section class="show-icons">
+       <!-- <section class="show-icons">
             <img src="assets/image/icons8-facebook-96%20(3).png" title="facebook" alt="facebook">
             <img src="assets/image/icons8-instagram-96%20(1).png" title="instagram" alt="instagram">
             <img src="assets/image/icons8-linkedin-96%20(1).png" title="linkedin" alt="linkedin">
             <img src="assets/image/icons8-gmailss-96%20(5).png" title="gmail" alt="gmail">
             <img src="assets/image/icons8-whatsapp-96%20(1).png" title="whatsapp" alt="whatsapp">
+        </section>-->
+
+        <section class="show-icons">
+            <a href="https://www.facebook.com/profile.php?id=100050188121525&mibextid=ZbWKwL" title="Facebook">
+                <img src="assets/image/icons8-facebook-96%20(3).png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/sassarasehan?igsh=MThiODZneXV0YjA2Mg==" title="Instagram">
+                <img src="assets/image/icons8-instagram-96%20(1).png" alt="instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/sehan-sassara-5b0145309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn">
+                <img src="assets/image/icons8-linkedin-96%20(1).png" alt="linkedin">
+            </a>
+            <a href="mailto:sehansassara2002@gmail.com" title="Gmail">
+                <img src="assets/image/icons8-gmailss-96%20(5).png" alt="gmail">
+            </a>
+            <a href="https://wa.me/qr/AWX6P2YB62EQI1" title="WhatsApp">
+                <img src="assets/image/icons8-whatsapp-96%20(1).png" alt="whatsapp">
+            </a>
         </section>
+
     </section>
 </main>
 
@@ -797,30 +816,8 @@
     };
 
 
-    // Function to handle orientation changes
-    function handleOrientation(event) {
-        // Get the orientation values
-        let x = event.beta; // In degrees, from -180 to 180 (tilt front/back)
-        let y = event.gamma; // In degrees, from -90 to 90 (tilt left/right)
 
-        // Cap the values to avoid excessive rotation
-        if (x > 15) x = 15;
-        if (x < -15) x = -15;
-        if (y > 15) y = 15;
-        if (y < -15) y = -15;
 
-        // Rotate the cards based on the orientation values
-        document.querySelectorAll('.card').forEach(card => {
-            card.style.transform = `rotateX(${x}deg) rotateY(${y}deg)`;
-        });
-    }
-
-    // Add event listener for device orientation
-    if (window.DeviceOrientationEvent) {
-        window.addEventListener('deviceorientation', handleOrientation);
-    } else {
-        console.log('DeviceOrientationEvent is not supported on your device/browser.');
-    }
 
 </script>
 
